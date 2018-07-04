@@ -82,8 +82,11 @@
     }
     .container
     {
-        padding-top: 1px;
-        padding-bottom: 1px;
-        padding-left: 0px;
-        padding-right: 150px; 
-    }
+        width: 100%;
+  padding-right: 100px;
+  padding-left: 100px;
+  margin-right: auto;
+  margin-left: auto;
+
+ 
+    
