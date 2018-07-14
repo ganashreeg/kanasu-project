@@ -1,35 +1,44 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="Paper" content="Daily News ">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
-        <title>Saval Pathrike </title>
-        <link href="https://fonts.googleapis.com/css?family=Baloo+Tamma" rel="stylesheet">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-        <link rel="stylesheet" type="text/css" href="mdl/material.css">
-        <link rel="stylesheet" type="text/css" href="mdl/common-styles.css">
-        <style>
-        body {
-        font-family: 'Baloo Tamma', cursive;
-        
-        }
-        #view-source {
-        position: fixed;
-        display: block;
-        right: 0;
-        bottom: 0;
-        margin-right: 40px;
-        margin-bottom: 40px;
-        z-index: 900;
-        }
-        </style>
-    </head>
-    <body class="mdl-demo mdl-color--grey-100 mdl-color-text--grey-700 mdl-base">
-        <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
-            <header class="android-header mdl-layout__header mdl-layout__header--waterfall">
-                <div class="mdl-layout__header-row">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="Paper" content="Daily News ">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <title>Saval Pathrike </title>
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Tamma" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" type="text/css" href="mdl/material.css">
+    <link rel="stylesheet" type="text/css" href="mdl/common-styles.css">
+    <style>
+    body {
+    font-family: 'Baloo Tamma', cursive;
+    
+    }
+    #view-source {
+    position: fixed;
+    display: block;
+    right: 0;
+    bottom: 0;
+    margin-right: 40px;
+    margin-bottom: 40px;
+    z-index: 900;
+    }
+    iframe {
+    display:block;
+    height: 100%;
+    width:100%;
+    }.header-img{
+    display:block;
+    height: 100%;
+    width:100%;
+    }
+    </style>
+  </head>
+  <body class="mdl-demo mdl-color--grey-100 mdl-color-text--grey-700 mdl-base">
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+      <header class="android-header mdl-layout__header mdl-layout__header--waterfall">
+        <div class="mdl-layout__header-row">
           <span class="android-title mdl-layout-title">
             <img class="android-logo-image" src="images/android-logo.png">
           </span>
@@ -46,171 +55,204 @@
           <!-- Navigation -->
           <div class="android-navigation-container">
             <nav class="android-navigation mdl-navigation">
-              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">Phones</a>
-              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">Tablets</a>
-              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">Wear</a>
-              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">TV</a>
-              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">Auto</a>
+              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">Section 1</a>
+              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">Section 2</a>
+              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">Section 3</a>
+              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">Section 4</a>
+              <!--<a class="mdl-navigation__link mdl-typography--text-uppercase" href="">Auto</a>
               <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">One</a>
-              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">Play</a>
+              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">Play</a>-->
             </nav>
           </div>
           <span class="android-mobile-title mdl-layout-title">
             <img class="android-logo-image" src="images/android-logo.png">
           </span>
           <button class="android-more-button mdl-button mdl-js-button mdl-button--icon mdl-js-ripple-effect" id="more-button">
-            <i class="material-icons">more_vert</i>
+          <i class="material-icons">more_vert</i>
           </button>
           <ul class="mdl-menu mdl-js-menu mdl-menu--bottom-right mdl-js-ripple-effect" for="more-button">
-            <li class="mdl-menu__item">5.0 Lollipop</li>
-            <li class="mdl-menu__item">4.4 KitKat</li>
-            <li disabled class="mdl-menu__item">4.3 Jelly Bean</li>
-            <li class="mdl-menu__item">Android History</li>
+            <li class="mdl-menu__item">Main 1A</li>
+            <li class="mdl-menu__item">Main 1B</li>
+            <li disabled class="mdl-menu__item">Main 1C</li>
+            <li class="mdl-menu__item">Main 1D</li>
           </ul>
         </div>
-            </header>
-            <div class="android-drawer mdl-layout__drawer">
+      </header>
+      <!-- Numeric Textfield -->
+      
+      <div class="android-drawer mdl-layout__drawer">
         <span class="mdl-layout-title">
           <img class="android-logo-image" src="images/android-logo-white.png">
         </span>
         <nav class="mdl-navigation">
-          <a class="mdl-navigation__link" href="">Phones</a>
-          <a class="mdl-navigation__link" href="">Tablets</a>
-          <a class="mdl-navigation__link" href="">Wear</a>
-          <a class="mdl-navigation__link" href="">TV</a>
-          <a class="mdl-navigation__link" href="">Auto</a>
+          <a class="mdl-navigation__link" href="">Section 1</a>
+          <a class="mdl-navigation__link" href="">Section 2</a>
+          <a class="mdl-navigation__link" href="">Section 3</a>
+          <a class="mdl-navigation__link" href="">Section 4</a>
+          <!--<a class="mdl-navigation__link" href="">Auto</a>
           <a class="mdl-navigation__link" href="">One</a>
-          <a class="mdl-navigation__link" href="">Play</a>
+          <a class="mdl-navigation__link" href="">Play</a>-->
           <div class="android-drawer-separator"></div>
-          <span class="mdl-navigation__link" href="">Versions</span>
-          <a class="mdl-navigation__link" href="">Lollipop 5.0</a>
-          <a class="mdl-navigation__link" href="">KitKat 4.4</a>
-          <a class="mdl-navigation__link" href="">Jelly Bean 4.3</a>
-          <a class="mdl-navigation__link" href="">Android history</a>
+          <span class="mdl-navigation__link" href="">Main 1</span>
+          <a class="mdl-navigation__link" href="">Main 1A</a>
+          <a class="mdl-navigation__link" href="">Main 1B</a>
+          <a class="mdl-navigation__link" href="">Main 1C</a>
+          <a class="mdl-navigation__link" href="">Main 1D</a>
           <div class="android-drawer-separator"></div>
-          <span class="mdl-navigation__link" href="">Resources</span>
-          <a class="mdl-navigation__link" href="">Official blog</a>
-          <a class="mdl-navigation__link" href="">Android on Google+</a>
-          <a class="mdl-navigation__link" href="">Android on Twitter</a>
+          <span class="mdl-navigation__link" href="">Main 2</span>
+          <a class="mdl-navigation__link" href="">Main 2A</a>
+          <a class="mdl-navigation__link" href="">Main 2B</a>
+          <a class="mdl-navigation__link" href="">Main 2C</a>
           <div class="android-drawer-separator"></div>
-          <span class="mdl-navigation__link" href="">For developers</span>
+          <!--<span class="mdl-navigation__link" href="">For developers</span>
           <a class="mdl-navigation__link" href="">App developer resources</a>
           <a class="mdl-navigation__link" href="">Android Open Source Project</a>
-          <a class="mdl-navigation__link" href="">Android SDK</a>
+          <a class="mdl-navigation__link" href="">Android SDK</a>-->
         </nav>
       </div>
-            <main class="mdl-layout__content">
-                <div class="mdl-layout__tab-panel is-active" id="overview">
-                    <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
-                        <header class="section__play-btn mdl-cell mdl-cell--3-col-desktop mdl-cell--2-col-tablet mdl-cell--4-col-phone mdl-color--teal-100 mdl-color-text--white">
-                            <i class="material-icons">play_circle_filled</i>
-                        </header>
-                        <div class="mdl-card mdl-cell mdl-cell--9-col-desktop mdl-cell--6-col-tablet mdl-cell--4-col-phone">
-                            <div class="mdl-card__supporting-text">
-                                <h4>Features</h4>
-                                Dolore ex deserunt aute fugiat aute nulla ea sunt aliqua nisi cupidatat eu. Nostrud in laboris labore nisi amet do dolor eu fugiat consectetur elit cillum esse.
-                            </div>
-                            <div class="mdl-card__actions">
-                                <a href="#" class="mdl-button">Read our features</a>
-                            </div>
-                        </div>   
-                    </section>
+      <main class="mdl-layout__content">
+        <div class="mdl-layout__tab-panel is-active" id="overview">
+          <center><img class="header-img" src="images/savalred.png"style="width: 60%;"></center>
+          <center><span><i>July 10, 2018</i></span></center>
+          <!--<center>
 
-                    <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
-                        <header class="section__play-btn mdl-cell mdl-cell--3-col-desktop mdl-cell--2-col-tablet mdl-cell--4-col-phone mdl-color--teal-100 mdl-color-text--white">
-                            <i class="material-icons">play_circle_filled</i>
-                        </header>
-                        <div class="mdl-card mdl-cell mdl-cell--9-col-desktop mdl-cell--6-col-tablet mdl-cell--4-col-phone">
-                            <div class="mdl-card__supporting-text">
-                                <h4>Features</h4>
-                                Dolore ex deserunt aute fugiat aute nulla ea sunt aliqua nisi cupidatat eu. Nostrud in laboris labore nisi amet do dolor eu fugiat consectetur elit cillum esse.
-                            </div>
-                            <div class="mdl-card__actions">
-                                <a href="#" class="mdl-button">Read our features</a>
-                            </div>
-                        </div>   
-                    </section>
-
-                    <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
-                        <header class="section__play-btn mdl-cell mdl-cell--3-col-desktop mdl-cell--2-col-tablet mdl-cell--4-col-phone mdl-color--teal-100 mdl-color-text--white">
-                            <i class="material-icons">play_circle_filled</i>
-                        </header>
-                        <div class="mdl-card mdl-cell mdl-cell--9-col-desktop mdl-cell--6-col-tablet mdl-cell--4-col-phone">
-                            <div class="mdl-card__supporting-text">
-                                <h4>Features</h4>
-                                Dolore ex deserunt aute fugiat aute nulla ea sunt aliqua nisi cupidatat eu. Nostrud in laboris labore nisi amet do dolor eu fugiat consectetur elit cillum esse.
-                            </div>
-                            <div class="mdl-card__actions">
-                                <a href="#" class="mdl-button">Read our features</a>
-                            </div>
-                        </div>   
-                    </section>
-
-                    <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
-                        <header class="section__play-btn mdl-cell mdl-cell--3-col-desktop mdl-cell--2-col-tablet mdl-cell--4-col-phone mdl-color--teal-100 mdl-color-text--white">
-                            <i class="material-icons">play_circle_filled</i>
-                        </header>
-                        <div class="mdl-card mdl-cell mdl-cell--9-col-desktop mdl-cell--6-col-tablet mdl-cell--4-col-phone">
-                            <div class="mdl-card__supporting-text">
-                                <h4>Features</h4>
-                                Dolore ex deserunt aute fugiat aute nulla ea sunt aliqua nisi cupidatat eu. Nostrud in laboris labore nisi amet do dolor eu fugiat consectetur elit cillum esse.
-                            </div>
-                            <div class="mdl-card__actions">
-                                <a href="#" class="mdl-button">Read our features</a>
-                            </div>
-                        </div>   
-                    </section>
-
-                    <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
-                        <header class="section__play-btn mdl-cell mdl-cell--3-col-desktop mdl-cell--2-col-tablet mdl-cell--4-col-phone mdl-color--teal-100 mdl-color-text--white">
-                            <i class="material-icons">play_circle_filled</i>
-                        </header>
-                        <div class="mdl-card mdl-cell mdl-cell--9-col-desktop mdl-cell--6-col-tablet mdl-cell--4-col-phone">
-                            <div class="mdl-card__supporting-text">
-                                <h4>Features</h4>
-                                Dolore ex deserunt aute fugiat aute nulla ea sunt aliqua nisi cupidatat eu. Nostrud in laboris labore nisi amet do dolor eu fugiat consectetur elit cillum esse.
-                            </div>
-                            <div class="mdl-card__actions">
-                                <a href="#" class="mdl-button">Read our features</a>
-                            </div>
-                        </div>   
-                    </section>
-                </div>
-
-                <footer class="android-footer mdl-mega-footer">
-          <div class="mdl-mega-footer--top-section">
-            <div class="mdl-mega-footer--left-section">
-              <button class="mdl-mega-footer--social-btn"></button>
-              &nbsp;
-              <button class="mdl-mega-footer--social-btn"></button>
-              &nbsp;
-              <button class="mdl-mega-footer--social-btn"></button>
+          <form action="#">
+            <div class="mdl-textfield mdl-js-textfield">
+              <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="sample2">
+              <label class="mdl-textfield__label" for="sample2"><center><p>  <span id="datetime"></span></p></center></label>
+              <span class="mdl-textfield__error">Input is not a number!</span>
             </div>
-            <div class="mdl-mega-footer--right-section">
-              <a class="mdl-typography--font-light" href="#top">
-                Back to Top
-                <i class="material-icons">expand_less</i>
-              </a>
+          </form></center>-->
+          
+          
+          
+          <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp" >
+            <div class="mdl-card mdl-cell mdl-cell--7-col-desktop mdl-cell--6-col-tablet mdl-cell--4-col-phone" style="padding-left: 20px">
+              <div class="mdl-card__supporting-text">
+                <span class="category"><a href="https" rel="category tag">ಮೈಸೂರು</a></span>
+                <h4 class="entry-title"><a href="https" title="ಕಾಡಾನೆ ಅರಣ್ಯಕ್ಕೆ ಅಟ್ಟುವ ಕಾರ್ಯಾಚರಣೆ">ಕಾಡಾನೆ ಅರಣ್ಯಕ್ಕೆ ಅಟ್ಟುವ ಕಾರ್ಯಾಚರಣೆ</a></h4>
+                <span class="title-divider"></span>
+                <div class="entry-content">ಕುಶಾಲನಗರದ ನುರಿತ ರ್ಯಾಪಿಡ್ ರೆಸ್ಪಾನ್ಸ್ ತಂಡ ಮತ್ತು ಮಡಿಕೇರಿ ಅರಣ್ಯ ಇಲಾಖಾ ಸಿಬ್ಬಂದಿಗಳು ಮಂಗಳವಾರ ಬೆಳಗ್ಗೆ ಯಿಂದಲೇ ಕಾಫಿ ತೋಟದ ಒಳಗೆ ಕಾಡಾ ನೆಗಳು ಅಲೆದಾಡಿರುವ ಹೆಜ್ಜೆ ಗುರುತುಗಳ ಜಾಡು ಅರಸಿ ಹೊರಟು, 2 ಕಾಡಾನೆ ಗಳು ಮೇಕೇರಿ ಕಡೆಯಿಂದ ತಾಳತ್ತಮನೆ ಬಳಿ ತೆರಳಿರುವ ಮಾಹಿತಿ ಸಂಗ್ರಹಿಸಿದರು...</div>
+              </div>
+              <div class="mdl-card__actions"style=" margin-right:0; font-style:italic; font-size:12px; margin-right:0; font-style:italic; font-size:12px">
+                <span><i>July 10, 2018</i></span>
+                <a class="morelink" href="  "style="float: right; margin-right:0; font-style:italic; font-size:12px" >Continue to read... <i class="fa fa-long-arrow-right"></i></a>
+              </div>
             </div>
-          </div>
-
-          <div class="mdl-mega-footer--middle-section">
-            <p class="mdl-typography--font-light">News & Images: © 2018 Saval Pathrike</p>
-            <p class="mdl-typography--font-light">Some features and devices may not be available in all areas</p>
-          </div>
-
-        </footer>
-                
-            </main>
-
-
+            <header class="section__play-btn mdl-cell mdl-cell--5-col-desktop mdl-cell--2-col-tablet mdl-cell--4-col-phone mdl-color--teal-100 mdl-color-text--white">
+              <iframe id="ytplayer" type="text/html" width="640" height="360"
+              src="https://www.youtube.com/embed/M7lc1UVf-VE?autoplay=1&origin=http://example.com"
+              frameborder="0"></iframe>
+            </header>
             
-        </div>
-
-
-        <script type="text/javascript" src="mdl/material.js"></script>
-
+          </section>
+          <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+            <header class="section__play-btn mdl-cell mdl-cell--3-col-desktop mdl-cell--2-col-tablet mdl-cell--4-col-phone mdl-color--teal-100 mdl-color-text--white">
+              <img class="header-img" src="images/example-work01.jpg">
+            </header>
+            <div class="mdl-card mdl-cell mdl-cell--9-col-desktop mdl-cell--6-col-tablet mdl-cell--4-col-phone">
+              <div class="mdl-card__supporting-text">
+                <span class="category"><a href="https" rel="category tag">ಮೈಸೂರು</a></span>
+                <h4 class="entry-title"><a href="https" title="ಕಾಡಾನೆ ಅರಣ್ಯಕ್ಕೆ ಅಟ್ಟುವ ಕಾರ್ಯಾಚರಣೆ">ಕಾಡಾನೆ ಅರಣ್ಯಕ್ಕೆ ಅಟ್ಟುವ ಕಾರ್ಯಾಚರಣೆ</a></h4>
+                <span class="title-divider"></span>
+                <div class="entry-content">ಕುಶಾಲನಗರದ ನುರಿತ ರ್ಯಾಪಿಡ್ ರೆಸ್ಪಾನ್ಸ್ ತಂಡ ಮತ್ತು ಮಡಿಕೇರಿ ಅರಣ್ಯ ಇಲಾಖಾ ಸಿಬ್ಬಂದಿಗಳು ಮಂಗಳವಾರ ಬೆಳಗ್ಗೆ ಯಿಂದಲೇ ಕಾಫಿ ತೋಟದ ಒಳಗೆ ಕಾಡಾ ನೆಗಳು ಅಲೆದಾಡಿರುವ ಹೆಜ್ಜೆ ಗುರುತುಗಳ ಜಾಡು ಅರಸಿ ಹೊರಟು, 2 ಕಾಡಾನೆ ಗಳು ಮೇಕೇರಿ ಕಡೆಯಿಂದ ತಾಳತ್ತಮನೆ ಬಳಿ ತೆರಳಿರುವ ಮಾಹಿತಿ ಸಂಗ್ರಹಿಸಿದರು...</div>
+              </div>
+              <div class="mdl-card__actions"style=" margin-right:0; font-style:italic; font-size:12px; margin-right:0; font-style:italic; font-size:12px">
+                <span><i>July 10, 2018</i></span>
+                <a class="morelink" href="  "style="float: right; margin-right:0; font-style:italic; font-size:12px" >Continue to read... <i class="fa fa-long-arrow-right"></i></a>
+              </div>
+            </div>
+          </section>
+          <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+            <header class="section__play-btn mdl-cell mdl-cell--3-col-desktop mdl-cell--2-col-tablet mdl-cell--4-col-phone mdl-color--teal-100 mdl-color-text--white">
+              <img class="header-img" src="images/example-work01.jpg">
+            </header>
+            <div class="mdl-card mdl-cell mdl-cell--9-col-desktop mdl-cell--6-col-tablet mdl-cell--4-col-phone">
+              <div class="mdl-card__supporting-text">
+                <span class="category"><a href="https" rel="category tag">ಮೈಸೂರು</a></span>
+                <h4 class="entry-title"><a href="https" title="ಕಾಡಾನೆ ಅರಣ್ಯಕ್ಕೆ ಅಟ್ಟುವ ಕಾರ್ಯಾಚರಣೆ">ಕಾಡಾನೆ ಅರಣ್ಯಕ್ಕೆ ಅಟ್ಟುವ ಕಾರ್ಯಾಚರಣೆ</a></h4>
+                <span class="title-divider"></span>
+                <div class="entry-content">ಕುಶಾಲನಗರದ ನುರಿತ ರ್ಯಾಪಿಡ್ ರೆಸ್ಪಾನ್ಸ್ ತಂಡ ಮತ್ತು ಮಡಿಕೇರಿ ಅರಣ್ಯ ಇಲಾಖಾ ಸಿಬ್ಬಂದಿಗಳು ಮಂಗಳವಾರ ಬೆಳಗ್ಗೆ ಯಿಂದಲೇ ಕಾಫಿ ತೋಟದ ಒಳಗೆ ಕಾಡಾ ನೆಗಳು ಅಲೆದಾಡಿರುವ ಹೆಜ್ಜೆ ಗುರುತುಗಳ ಜಾಡು ಅರಸಿ ಹೊರಟು, 2 ಕಾಡಾನೆ ಗಳು ಮೇಕೇರಿ ಕಡೆಯಿಂದ ತಾಳತ್ತಮನೆ ಬಳಿ ತೆರಳಿರುವ ಮಾಹಿತಿ ಸಂಗ್ರಹಿಸಿದರು...</div>
+              </div>
+              <div class="mdl-card__actions" style=" margin-right:0; font-style:italic; font-size:12px; margin-right:0; font-style:italic; font-size:12px">
+                <span><i>July 10, 2018</i></span>
+                <a class="morelink" href="  " style="float: right; margin-right:0; font-style:italic; font-size:12px">Continue to read... <i class="fa fa-long-arrow-right"></i></a>
+              </div>
+            </div>
+          </section>
+          <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+            <header class="section__play-btn mdl-cell mdl-cell--3-col-desktop mdl-cell--2-col-tablet mdl-cell--4-col-phone mdl-color--teal-100 mdl-color-text--white">
+              <img class="header-img" src="images/example-work01.jpg">
+            </header>
+            <div class="mdl-card mdl-cell mdl-cell--9-col-desktop mdl-cell--6-col-tablet mdl-cell--4-col-phone">
+              <div class="mdl-card__supporting-text">
+                <span class="category"><a href="https" rel="category tag">ಮೈಸೂರು</a></span>
+                <h4 class="entry-title"><a href="https" title="ಕಾಡಾನೆ ಅರಣ್ಯಕ್ಕೆ ಅಟ್ಟುವ ಕಾರ್ಯಾಚರಣೆ">ಕಾಡಾನೆ ಅರಣ್ಯಕ್ಕೆ ಅಟ್ಟುವ ಕಾರ್ಯಾಚರಣೆ</a></h4>
+                <span class="title-divider"></span>
+                <div class="entry-content">ಕುಶಾಲನಗರದ ನುರಿತ ರ್ಯಾಪಿಡ್ ರೆಸ್ಪಾನ್ಸ್ ತಂಡ ಮತ್ತು ಮಡಿಕೇರಿ ಅರಣ್ಯ ಇಲಾಖಾ ಸಿಬ್ಬಂದಿಗಳು ಮಂಗಳವಾರ ಬೆಳಗ್ಗೆ ಯಿಂದಲೇ ಕಾಫಿ ತೋಟದ ಒಳಗೆ ಕಾಡಾ ನೆಗಳು ಅಲೆದಾಡಿರುವ ಹೆಜ್ಜೆ ಗುರುತುಗಳ ಜಾಡು ಅರಸಿ ಹೊರಟು, 2 ಕಾಡಾನೆ ಗಳು ಮೇಕೇರಿ ಕಡೆಯಿಂದ ತಾಳತ್ತಮನೆ ಬಳಿ ತೆರಳಿರುವ ಮಾಹಿತಿ ಸಂಗ್ರಹಿಸಿದರು...</div>
+              </div>
+              <div class="mdl-card__actions" style=" margin-right:0; font-style:italic; font-size:12px; margin-right:0; font-style:italic; font-size:12px">
+                <span><i>July 10, 2018</i></span>
+                <a class="morelink" href="  " style="float: right; margin-right:0; font-style:italic; font-size:12px">Continue to read... <i class="fa fa-long-arrow-right"></i></a>
+              </div>
+            </div>
+          </section>
+          <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+            <header class="section__play-btn mdl-cell mdl-cell--3-col-desktop mdl-cell--2-col-tablet mdl-cell--4-col-phone mdl-color--teal-100 mdl-color-text--white">
+              <img class="header-img" src="images/example-work01.jpg">
+            </header>
+            <div class="mdl-card mdl-cell mdl-cell--9-col-desktop mdl-cell--6-col-tablet mdl-cell--4-col-phone">
+              <div class="mdl-card__supporting-text">
+                <span class="category"><a href="https" rel="category tag">ಮೈಸೂರು</a></span>
+                <h4 class="entry-title"><a href="https" title="ಕಾಡಾನೆ ಅರಣ್ಯಕ್ಕೆ ಅಟ್ಟುವ ಕಾರ್ಯಾಚರಣೆ">ಕಾಡಾನೆ ಅರಣ್ಯಕ್ಕೆ ಅಟ್ಟುವ ಕಾರ್ಯಾಚರಣೆ</a></h4>
+                <span class="title-divider"></span>
+                <div class="entry-content">ಕುಶಾಲನಗರದ ನುರಿತ ರ್ಯಾಪಿಡ್ ರೆಸ್ಪಾನ್ಸ್ ತಂಡ ಮತ್ತು ಮಡಿಕೇರಿ ಅರಣ್ಯ ಇಲಾಖಾ ಸಿಬ್ಬಂದಿಗಳು ಮಂಗಳವಾರ ಬೆಳಗ್ಗೆ ಯಿಂದಲೇ ಕಾಫಿ ತೋಟದ ಒಳಗೆ ಕಾಡಾ ನೆಗಳು ಅಲೆದಾಡಿರುವ ಹೆಜ್ಜೆ ಗುರುತುಗಳ ಜಾಡು ಅರಸಿ ಹೊರಟು, 2 ಕಾಡಾನೆ ಗಳು ಮೇಕೇರಿ ಕಡೆಯಿಂದ ತಾಳತ್ತಮನೆ ಬಳಿ ತೆರಳಿರುವ ಮಾಹಿತಿ ಸಂಗ್ರಹಿಸಿದರು...</div>
+                </div>
+              <div class="mdl-card__actions" style=" margin-right:0; font-style:italic; font-size:12px; margin-right:0; font-style:italic; font-size:12px">
+                <span><i>July 10, 2018</i></span>
+                <a class="morelink" href="  " style="float: right; margin-right:0; font-style:italic; font-size:12px">Continue to read... <i class="fa fa-long-arrow-right"></i></a>
+              </div>
+              </div>
+            </section>
+            
+            
+            
+          </div>
+          <footer class="android-footer mdl-mega-footer">
+            <div class="mdl-mega-footer--top-section">
+              <div class="mdl-mega-footer--left-section">
+                <button class="mdl-mega-footer--social-btn"></button>
+                &nbsp;
+                <button class="mdl-mega-footer--social-btn"></button>
+                &nbsp;
+                <button class="mdl-mega-footer--social-btn"></button>
+              </div>
+              <div class="mdl-mega-footer--right-section">
+                <a class="mdl-typography--font-light" href="#top">
+                  Back to Top
+                  <i class="material-icons">expand_less</i>
+                </a>
+              </div>
+            </div>
+            <div class="mdl-mega-footer--middle-section">
+              <p class="mdl-typography--font-light">News & Images: © 2018 Saval Pathrike</p>
+              <p class="mdl-typography--font-light">Some features and devices may not be available in all areas</p>
+            </div>
+          </footer>
+          
+        </main>
+        
+      </div>
+      
+      
+      <script>
+      var dt = new Date();
+      document.getElementById("datetime").innerHTML = dt.toLocaleTimeString();
+      </script>
+      <script>
+      var dt = new Date();
+      document.getElementById("datetime").innerHTML = dt.toLocaleDateString();
+      </script>
+      <script type="text/javascript" src="mdl/material.js"></script>
     </body>
-
-
-</html>
+  </html>
