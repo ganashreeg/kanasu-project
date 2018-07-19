@@ -1,2 +1,0 @@
-# kanasu-project
-website
