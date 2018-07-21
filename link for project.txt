@@ -1,0 +1,34 @@
+For icon
+https://www.w3schools.com/howto/howto_css_icon_bar.asp
+
+Date
+https://www.arclab.com/en/kb/htmlcss/display-date-time-javascript-php-ssi.html
+
+Large shadow
+<div class="shadow-lg p-3 mb-5 bg-white rounded">Larger shadow</div>
+
+Top navigation bar
+https://www.w3schools.com/howto/howto_js_topnav_responsive.asp
+
+Text area
+https://www.w3schools.com/tags/tag_textarea.asp
+
+Video embeded
+https://www.w3schools.com/html/html_youtube.asp
+
+fb and u tube
+https://mdbootstrap.com/components/social-buttons/
+
+Link continue to read
+https://www.w3schools.com/bootstrap/tryit.asp?filename=trybs_button_styles&stacked=h
+
+Paragraph
+https://getbootstrap.com/docs/4.1/components/card/
+
+Flex bootstrap
+https://getbootstrap.com/docs/4.0/utilities/flex/
+
+material design
+https://getmdl.io/components/index.html
+imp
+https://material.io/design/environment/elevation.html#elevation-in-material-design
