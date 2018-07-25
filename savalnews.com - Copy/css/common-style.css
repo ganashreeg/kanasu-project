@@ -53,11 +53,11 @@ a img{
 
 .android-header {
   /*overflow: visible;*/
-  background-color: #910000;
+  background: linear-gradient(#018786,#03DAC6);
 }
 
   .android-header .material-icons {
-    color: #ffffff !important;
+    color: #000000 !important;
   }
 
   .android-header .mdl-layout__drawer-button {
@@ -66,7 +66,7 @@ a img{
   }
 
   .android-header .mdl-navigation__link {
-    color: #fffefe;
+    color: #000000;
     font-weight: 700;
     font-size: 14px;
   }
@@ -106,7 +106,7 @@ a img{
   }
 
     .android-navigation .mdl-navigation__link:hover {
-      border-bottom: 4px solid #ffffff;
+      border-bottom: 4px solid #000000;
     }
 
   .android-search-box {
@@ -136,7 +136,7 @@ a img{
 
   .android-drawer .mdl-navigation__link.mdl-navigation__link {
     font-size: 14px;
-    color: #910000;
+    color: #000000;
   }
 
   .android-drawer span.mdl-navigation__link.mdl-navigation__link {
@@ -145,7 +145,7 @@ a img{
 
   .android-drawer .mdl-layout-title {
     position: relative;
-    background: #910000;
+    background: linear-gradient(#018786,#03DAC6);
     height: 160px;
   }
 
