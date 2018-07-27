@@ -28,7 +28,7 @@
         <header class="android-header mdl-layout__header mdl-layout__header--waterfall">
             <div class="mdl-layout__header-row">
                 <span class="android-title mdl-layout-title">
-						<img class="android-logo-image" src="img/android-logo.png">
+						<img class="android-logo-image" src="img/saval.png">
 					</span>
                 <!-- Add spacer, to align navigation to the right in desktop -->
                 <div class="android-header-spacer mdl-layout-spacer"></div>
@@ -72,7 +72,7 @@
         </header>
         <div class="android-drawer mdl-layout__drawer">
             <span class="mdl-layout-title">
-					<img class="android-logo-image" src="img/android-logo-white.png">
+					<img class="android-logo-image" src="img/saval.png">
 				</span>
             <nav class="mdl-navigation">
                 <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">Home</a>
@@ -104,7 +104,7 @@
                 <!-- Main content div -->
                 <div class="mdl-cell mdl-cell--8-col-desktop mdl-cell--10-col-tablet mdl-cell--12-col-phone">
                     <center><img class="header-img" src="img/savalred.png" style="width: 60%;"></center>
-                    <center><span><i>July 10, 2018</i></span></center>
+                    <center><p id="demo"></p></center>
                     <!-- 1st Row -->
                     <div class="mdl-grid mdl-grid--no-spacing">
                         <div class="content_card_1 mdl-cell mdl-cell--9-col-desktop mdl-cell--8-col-tablet mdl-cell--12-col-phone post_card">
@@ -430,4 +430,9 @@
             ad_id++;
         })
     }
+</script>
+
+<script>
+var d = new Date();
+document.getElementById("demo").innerHTML = d.toDateString();
 </script>

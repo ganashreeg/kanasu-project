@@ -105,8 +105,8 @@
                     <div class="mdl-cell mdl-cell--2-col-desktop mdl-cell--1-col-tablet"></div>
                     <!-- Main content div -->
                     <div class="mdl-cell mdl-cell--8-col-desktop mdl-cell--10-col-tablet mdl-cell--12-col-phone">
-                        <center><img class="header-img" src="img/savalred.png" style="width: 60%;"></center>
-                        <center><span><i>July 10, 2018</i></span></center>
+                        <center><img class="header-img" src="img/hrl.jpg" style="width: 20%;"></center>
+                        <center><p id="demo"></p></center>
                         <!-- 1st Row -->
                         <div class="mdl-grid mdl-grid--no-spacing">
                             <div class="content_card_1 mdl-cell mdl-cell--9-col-desktop mdl-cell--8-col-tablet mdl-cell--12-col-phone post_card">
@@ -402,4 +402,9 @@ $('#main-ad-link-' + card_id).prop('href', value['main-ad-link']);
 ad_id++;
 })
 }
+</script>
+
+<script>
+var d = new Date();
+document.getElementById("demo").innerHTML = d.toDateString();
 </script>
