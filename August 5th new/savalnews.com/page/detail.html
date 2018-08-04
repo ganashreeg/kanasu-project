@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>ಸಾವಾಲ್ ವಾರ್ತೆ</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="Paper" content="Daily News ">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" type="text/css" href="../css/material.css">
+    <link rel="stylesheet" type="text/css" href="../css/common-style.css">
+    <link rel="stylesheet" type="text/css" href="../css/simplePagination.css">
+
+    <style>
+        .demo-layout-waterfall .mdl-layout__header-row .mdl-navigation__link:last-of-type {
+            padding-right: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="demo-layout-waterfall mdl-layout mdl-js-layout mdl-layout--fixed-header">
+        <!-- Top Navigation bar -->
+        <header class="android-header mdl-layout__header mdl-layout__header--waterfall">
+            <div class="mdl-layout__header-row">
+                <span class="android-title mdl-layout-title">
+						<img class="android-logo-image" src="../img/savallogo.png">
+					</span>
+                <!-- Add spacer, to align navigation to the right in desktop -->
+                <div class="android-header-spacer mdl-layout-spacer"></div>
+                <div class="android-search-box mdl-textfield mdl-js-textfield mdl-textfield--expandable mdl-textfield--floating-label mdl-textfield--align-right mdl-textfield--full-width">
+                    <label class="mdl-button mdl-js-button mdl-button--icon" for="search-field">
+							<i class="material-icons">search</i>
+						</label>
+                    <div class="mdl-textfield__expandable-holder">
+                        <input class="mdl-textfield__input" type="text" id="search-field">
+                    </div>
+                </div>
+                <!-- Navigation -->
+                <div class="android-navigation-container">
+                    <nav class="android-navigation mdl-navigation">
+                        <a class="mdl-button mdl-js-button mdl-button--icon" href="../index.html">
+							<i class="material-icons">home</i>
+						</a>
+                        <a class="mdl-navigation__link mdl-typography--text-uppercase" href="about.html">ನಮ್ಮ ಬಗ್ಗೆ</a>
+                        <a class="mdl-navigation__link mdl-typography--text-uppercase" href="epaper.html">ಈ-ಪೇಪರ್</a>
+                        <a class="mdl-navigation__link mdl-typography--text-uppercase" href="subscribe.html">ಚಂದಾದಾರ</a>
+                        <a class="mdl-navigation__link mdl-typography--text-uppercase" href="contact.html">ಸಂಪರ್ಕಿಸಿ</a>
+                        <a class="mdl-navigation__link mdl-typography--text-uppercase" href="../index-en.html">English</a>
+
+                    </nav>
+                </div>
+                <span class="android-mobile-title mdl-layout-title">
+						<img class="android-logo-image center" src="../img/savallogo.png">
+					</span>
+            </div>
+            <div class="mdl-layout__header-row mdl-cell--hide-phone">
+                <div class="mdl-layout-spacer"></div>
+                <!-- Navigation -->
+                <nav class="mdl-navigation">
+                    <a class="mdl-navigation__link" href="category.html">ಮೈಸೂರು</a>
+                    <a class="mdl-navigation__link" href="category.html">ಮಂಡ್ಯ</a>
+                    <a class="mdl-navigation__link" href="category.html">ಮಡಿಕೇರಿ</a>
+                    <a class="mdl-navigation__link" href="category.html">ಚಾಮರಾಜನಗರ</a>
+                    <a class="mdl-navigation__link" href="category.html">ಹಾಸನ</a>
+                    <a class="mdl-navigation__link" href="category.html">ವಿಶೇಷ ಸುದ್ದಿ</a>
+                </nav>
+            </div>
+        </header>
+
+        <div class="android-drawer mdl-layout__drawer">
+            <span class="mdl-layout-title"></span>
+            <nav class="mdl-navigation">
+                <a class="mdl-navigation__link mdl-typography--text-uppercase" href="../index.html">Home</a>
+                <a class="mdl-navigation__link mdl-typography--text-uppercase" href="about.html">ನಮ್ಮ ಬಗ್ಗೆ</a>
+                <div class="android-drawer-separator"></div>
+                <a class="mdl-navigation__link" href="category.html">ಮೈಸೂರು</a>
+                    <a class="mdl-navigation__link" href="category.html">ಮಂಡ್ಯ</a>
+                    <a class="mdl-navigation__link" href="category.html">ಮಡಿಕೇರಿ</a>
+                    <a class="mdl-navigation__link" href="category.html">ಚಾಮರಾಜನಗರ</a>
+                    <a class="mdl-navigation__link" href="category.html">ಹಾಸನ</a>
+                    <a class="mdl-navigation__link" href="category.html">ವಿಶೇಷ ಸುದ್ದಿ</a>
+                <div class="android-drawer-separator"></div>
+                <a class="mdl-navigation__link mdl-typography--text-uppercase" href="epaper.html">ಈ-ಪೇಪರ್</a>
+                <a class="mdl-navigation__link mdl-typography--text-uppercase" href="subscribe.html">ಚಂದಾದಾರ</a>
+                <a class="mdl-navigation__link mdl-typography--text-uppercase" href="contact.html">ಸಂಪರ್ಕಿಸಿ</a>
+                <div class="android-drawer-separator"></div>
+                <a class="mdl-navigation__link" href="../index-en.html">English</a>
+                <a class="mdl-navigation__link" href="kanasu.org">ಕನಸು ವೆಬ್ಸೈಟ್</a>
+                <a class="mdl-navigation__link" href="hracorg.com">HRACORG ವೆಬ್ಸೈಟ್</a>
+            </nav>
+        </div>
+        <main class="mdl-layout__content">
+
+            <!-- Main Section -->
+            <section class="mdl-grid mdl-grid--no-spacing" style="background-color: #fff2f2">
+                <!-- Empty space div -->
+                <div class="mdl-cell mdl-cell--2-col-desktop mdl-cell--2-col-tablet mdl-cell--12-col-phone"></div>
+                <!-- Main content div -->
+                <div class="mdl-cell mdl-cell--8-col-desktop mdl-cell--8-col-tablet mdl-cell--12-col-phone">
+                    <center><img class="header-img" src="../img/savalred.png" style="width: 60%; max-height: 200px"></center>
+                    <section class="mdl-grid mdl-grid--no-spacing" style="padding-top: 8px;padding-bottom: 8px">
+                        <div class="mdl-cell mdl-cell--3-col-desktop mdl-cell--12-col-phone datelinks">
+                            <a href="https://play.google.com"><img style="object-fit: contain;width: 100%;height: 100%" src="../img/gplay.png"></a>
+                        </div>
+                        <div class="mdl-cell mdl-cell--6-col-desktop mdl-cell--12-col-phone datelinks">
+                            <center>
+                                <div class="today_date" id="todayDate"></div>
+                            </center>
+                        </div>
+                        <div class="mdl-cell mdl-cell--3-col-desktop mdl-cell--12-col-phone datelinks">
+                            <center><a href="https://facebook.com"><img src="../img/facebook.png"></a>
+                                <a href="https://twitter.com"><img src="../img/twitter.png"></a>
+                                <a href="https://instagram.com"><img src="../img/instagram.png"></a>
+                                <a href="https://youtube.com"><img src="../img/youtube.png"></a></center>
+                        </div>
+                    </section>
+                    <!-- 1st Row -->
+                    <div class="mdl-grid mdl-grid--no-spacing">
+                        <div class="content_card_1 mdl-cell mdl-cell--9-col-desktop mdl-cell--12-col-phone post_card">
+
+                            <section class="mdl-grid mdl-grid--no-spacing">
+                                <div id="detail-card-category" class="detail_card_category"><a href="category.html" rel="category tag">ಮೈಸೂರು</a></div>
+                            </section>
+
+                            <section class="mdl-grid mdl-grid--no-spacing">
+
+                                <div id="detail-card-headline" class="detail_card_headline">
+                                    <h3>ಬಂಡಿಪುರ ಅಭಯಾರಣ್ಯದಲ್ಲಿ ರಾತ್ರಿ ವಾಹನ ಸಂಚಾರ ನಿಷೇಧ ಹಿಂಪಡೆಯುವ ಪ್ರಶ್ನೆ ಇಲ್ಲ</h3>
+                                </div>
+
+                                <div class="img_all">
+
+                                    <img id="detail-img" class="detail_img img_all" src="../img/detailnews.jpg">
+
+                                </div>
+                                <div class="mdl-grid" style="width: 100%;display: table">
+                                    <div id="detail-card-publish-date" class="detail_card_publish_date">
+                                        July 10, 2018
+                                    </div>
+                                    <div id="total_viewed" class="detail_card_viewer">
+                                        <i class="material-icons" style="vertical-align: middle">visibility</i> 78 Viewed
+                                    </div>
+                                </div>
+                            </section>
+                            <section class="mdl-grid mdl-grid--no-spacing">
+                                <p class="detail_card_detail">
+
+
+                                    ಮೈಸೂರು: ಬಂಡಿಪುರ ಅಭಯಾರಣ್ಯದಲ್ಲಿ ಹಾದು ಹೋಗುವ ರಾಷ್ಟ್ರೀಯ ಹೆದ್ದಾರಿಗಳಲ್ಲಿ ರಾತ್ರಿ ವಾಹನಗಳ ಸಂಚಾರ ನಿಷೇಧವನ್ನು ಹಿಂಪಡೆಯುವ ಪ್ರಸ್ತಾಪ ರಾಜ್ಯ ಸರ್ಕಾರದ ಮುಂದೆ ಇಲ್ಲ. ಕೇರಳ ಸರ್ಕಾರ ಮಾಡಿರುವ ಮೇಲ್ಸೇತುವೆ ನಿರ್ಮಾಣ ಹಾಗೂ ರಾತ್ರಿ ಸಂಚಾರ ನಿರ್ಬಂಧ ಸಡಿಲಿಕೆ ಮನವಿಯನ್ನು ತಿರಸ್ಕರಿಸಿ, ವನ್ಯಜೀವಿಗಳ ಕಾಪಾಡಲು ರಾಜ್ಯ ಸರ್ಕಾರ ಬದ್ಧವಾಗಿದೆ ಎಂದು ರಾಜ್ಯ ಅರಣ್ಯ ಸಚಿವ ಆರ್.ಶಂಕರ್ ಸ್ಪಷ್ಟಪಡಿಸಿದ್ದಾರೆ.
+                                    <br/>
+                                    <br/> ವಿವಿಧ ಕಾರ್ಯಕ್ರಮಗಳಲ್ಲಿ ಪಾಲ್ಗೊಳ್ಳಲು ಶುಕ್ರವಾರ ಮೈಸೂರಿಗೆ ಆಗಮಿಸಿದ್ದ ಅವರು, ಮೈಸೂರಿನ ಸರ್ಕಾರಿ ಅತಿಥಿ ಗೃಹ ಹಾಗೂ ಚಾಮುಂಡಿಬೆಟ್ಟ ದಲ್ಲಿ ಪತ್ರಕರ್ತರೊಂದಿಗೆ ಮಾತನಾಡಿದರು. ಬಂಡಿಪುರ ಅರಣ್ಯ ಪ್ರದೇಶದಲ್ಲಿ ಹಾದು ಹೋಗಿರುವ ರಾಷ್ಟ್ರೀಯ ಹೆದ್ದಾರಿ 212 ಹಾಗೂ 67ರಲ್ಲಿ ವಾಹನಗಳ ರಾತ್ರಿ ಸಂಚಾರ ನಿರ್ಬಂಧಿಸಿರುವ ಕ್ರಮದಿಂದ ಹಿಂದೆ ಸರಿಯುವಂತೆ ಕೇರಳ ಸರ್ಕಾರ ಪದೇ ಪದೆ ಒತ್ತಡ ತರುತ್ತಿದೆ. ಆದರೆ ಕೇರಳದ ಲಾಬಿಗೆ ಮಣಿಯದೆ, ರಾತ್ರಿ ಸಂಚಾರವನ್ನು ನಿರ್ಬಂಧಿಸಿ ದಿಟ್ಟ ನಿಲುವು ತಾಳಲಾಗಿದೆ. ಈ ಹಿಂದೆ ಆನೆ, ಹುಲಿ ಸೇರಿದಂತೆ ಅಪರೂಪದ ಪ್ರಾಣಿಗಳು ವಾಹನಗಳಿಗೆ ಬಲಿಯಾಗಿವೆ. ಇಂತಹ ಘಟನೆಗಳು ಮರುಕಳಿಸುವುದಕ್ಕೆ ಅವಕಾಶ ನೀಡುವುದಿಲ್ಲ. ಯಥಾಸ್ಥಿತಿ ಕಾಪಾಡುವುದಕ್ಕೆ ರಾಜ್ಯ ಸರ್ಕಾರ ಬದ್ಧವಾಗಿದೆ ಎಂದು ತಿಳಿಸಿದರು.
+
+                                    <br/>
+                                    <br/>ಕೇರಳ ಸರ್ಕಾರ ಕೇಂದ್ರದ ಮೇಲೆ ಒತ್ತಡ ತಂದು ಆ ಮೂಲಕ ರಾತ್ರಿ ಸಂಚಾರ ಪುನರಾರಂಭಕ್ಕೆ ಯತ್ನಿಸಿದೆ. ಕೇಂದ್ರ ಸರ್ಕಾರ ಫ್ಲೈಓವರ್ ನಿರ್ಮಾಣ, ಜೊತೆಗೆ ವಾಹನ ಸಂಚಾರ ನಿರ್ಬಂಧ ತೆರವು ಸಂಬಂಧ ಅಭಿಪ್ರಾಯ ಕೇಳಿದೆ. ಇದನ್ನು ಮುಖ್ಯಮಂತ್ರಿಗಳು ಪರಿಶೀಲಿಸುವುದಾಗಿ ಹೇಳಿದ್ದಾರೆ. ಈ ಮಧ್ಯೆ ಕೇರಳ ಸರ್ಕಾರ ರಾತ್ರಿ ಸಂಚಾರ ನಿಷೇಧ ಹಿಂಪಡೆಯುವುದಕ್ಕೆ ಕರ್ನಾಟಕ ಸಮ್ಮತಿಸಿದೆ ಎಂದು ಹೇಳುತ್ತಿದೆ. ವಾಸ್ತವವಾಗಿ ಯಥಾಸ್ಥಿತಿ ಕಾಯ್ದುಕೊಳ್ಳುವ ಮೂಲಕ ವನ್ಯಜೀವಿಗಳ ಹಿತ ಕಾಯುವುದು ನಮ್ಮ ಗುರಿಯಾಗಿದೆ.
+
+                                    <br/>
+                                    <br/>ಕೇರಳ ಸರ್ಕಾರ ಫ್ಲೈಓವರ್ ನಿರ್ಮಾಣ ಮಾಡಬೇಕು ಹಾಗೂ ರಾತ್ರಿ ಸಂಚಾರ ಪುನರಾರಂಭಿಸಬೇಕು ಎಂದು ಹಲವು ವರ್ಷಗಳಿಂದ ಒತ್ತಡ ಹೇರುತ್ತಲೇ ಬಂದಿದೆ ಎಂದರು. ಕೇಂದ್ರ ಬರೆದ ಪತ್ರ ಕುರಿತು ಪ್ರತಿಕ್ರಿಯಿಸಿದ ಅವರು, ರಾತ್ರಿ ಸಂಚಾರವನ್ನು ಮತ್ತೆ ಆರಂಭಿಸದಂತೆ ಪರಿಸರ ವಾದಿಗಳು ಮನವಿ ಮಾಡಿದ್ದಾರೆ.
+                                    <br/>
+                                    <br/> ಸಾಕಷ್ಟು ಆಕ್ಷೇಪಗಳು ವ್ಯಕ್ತವಾಗಿವೆ. ಇದರ ಬಗ್ಗೆ ಮುಖ್ಯಮಂತ್ರಿಗಳಿಗೆ ಮನವರಿಕೆ ಮಾಡಿಕೊಟ್ಟಿದ್ದೇವೆ. ಅಲ್ಲದೆ ಕೇಂದ್ರದ ಪತ್ರಕ್ಕೆ ಸೂಕ್ತ ಉತ್ತರ ನೀಡಿರು ವುದಲ್ಲದೆ, ನಿರ್ಬಂಧದಿಂದ ಹಿಂದೆ ಸರಿಯುವ ಪ್ರಸ್ತಾವನೆಯನ್ನು ತಿರಸ್ಕರಿಸಿರುವುದಾಗಿ ಹೇಳಿದ್ದೇವೆ.
+
+                                    <br/>
+                                    <br/>ಕೇರಳ ಸರ್ಕಾರದ ಒತ್ತಾಯಕ್ಕೆ ಮಣಿದು ಫ್ಲೈಓವರ್ ನಿರ್ಮಾಣ ಕಾಮಗಾರಿ ಕೈಗೆತ್ತಿಕೊಂಡರೆ ಸುಮಾರು ಎರಡರಿಂದ ಮೂರು ವರ್ಷಗಳ ಕಾಲ ಕಾಮಗಾರಿ ನಡೆಸಬೇಕಾಗುತ್ತದೆ. ಅರಣ್ಯದಲ್ಲಿನ ಪ್ರಾಣಿ-ಪಕ್ಷಿ ಸಂಕುಲಕ್ಕೆ ತೊಂದರೆಯಾಗುತ್ತದೆ. ಇದನ್ನು ಮನಗಂಡು ಫ್ಲೈಓವರ್ ನಿರ್ಮಾಣ ಅಸಾಧ್ಯ ಎಂಬ ಅಭಿಪ್ರಾಯ ಮಂಡಿಸಲಾಗಿದೆ ಎಂದು ಹೇಳಿದರು.
+                                    <br/>
+                                    <br/> ಕೇರಳಕ್ಕೆ ಹೋಗುವವರಿಗಾಗಿಯೇ ಈಗಾಗಲೇ 75 ಕೋಟಿ ರೂಗಳ ವೆಚ್ಚದಲ್ಲಿ ತಿತಿಮತಿಯಿಂದ ಕುಟ್ಟವರೆಗೆ ಪರ್ಯಾಯ ಮಾರ್ಗ ವ್ಯವಸ್ಥೆ ಮಾಡಲಾಗಿದೆ. ಇಲ್ಲಿ ಅರ್ಧ ಗಂಟೆ ಹೆಚ್ಚಿನ ಅವಧಿ ಪ್ರಯಾಣಕ್ಕೆ ತೆಗೆದುಕೊಳ್ಳುತ್ತದೆ. ಆದರೆ ಕೇರಳ ಸರ್ಕಾರ ಮಾತ್ರ ಬಂಡಿಪುರ ಮೂಲಕ ಹಾದು ಹೋಗಿರುವ ರಸ್ತೆಯಲ್ಲಿಯೇ ಅವಕಾಶ ನೀಡುವಂತೆ ಕೇಳುತ್ತಿದೆ.
+                                </p>
+                            </section>
+
+                        </div>
+                        <div class="mdl-cell mdl-cell--3-col-desktop mdl-cell--4-col-tablet mdl-cell--12-col-phone">
+
+                            <div class="ad_content_1 mdl-cell mdl-cell--12-col-desktop mdl-cell--12-col-phone post_ad_img">
+                                <section class="section--center mdl-grid mdl-grid--no-spacing">
+                                    <a id="main-ad-link-1" href=""><img id="main-ad-img-1" class="ad_img_small img_all" src="../img/add1.jpg"></a>
+                                </section>
+                            </div>
+                            <div class="ad_content_2 mdl-cell mdl-cell--12-col-desktop mdl-cell--12-col-phone post_ad_img">
+                                <section class="section--center mdl-grid mdl-grid--no-spacing">
+                                    <a id="main-ad-link-2" href=""><img id="main-ad-img-2" class="ad_img_small img_all" src="../img/add2.jpg"></a>
+                                </section>
+                            </div>
+                            <div class="ad_content_2 mdl-cell mdl-cell--12-col-desktop mdl-cell--12-col-phone post_ad_img">
+                                <section class="section--center mdl-grid mdl-grid--no-spacing">
+                                    <a id="main-ad-link-3" href=""><img id="main-ad-img-3" class="ad_img_small img_all" src="../img/add4.jpg"></a>
+                                </section>
+                            </div>
+                            <div class="ad_content_3 mdl-cell mdl-cell--12-col-desktop mdl-cell--12-col-phone post_ad_img">
+                                <section class="section--center mdl-grid mdl-grid--no-spacing">
+                                    <a id="main-ad-link-3" href=""><img id="main-ad-img-3" class="ad_img_long img_all" src="../img/add3.jpg"></a>
+                                </section>
+                            </div>
+                            <div class="fb_content mdl-cell mdl-cell--12-col-desktop clearfix">
+                                <section class="section--center mdl-grid mdl-grid--no-spacing" style="width: 100%">
+                                    <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FSaval-Pathrike-1617190021680007%2F&tabs=timeline&width=320&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=false&appId" width="320" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+
+                                </section>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+                <div class="mdl-cell mdl-cell--2-col-desktop mdl-cell--2-col-tablet mdl-cell--12-col-phone"></div>
+            </section>
+            <footer class="docs-text-styling docs-footer mdl-mini-footer mdl-color--grey-900">
+                <ul>
+                    <li class="mdl-mini-footer--social-btn">
+                        <a href="https://facebook.com" class="social-btn social-btn__facebook" role="button" title="Facebook"></a>
+                    </li>
+                    <li class="mdl-mini-footer--social-btn">
+                        <a href="https://instagram.com" class="social-btn social-btn__instagram" role="button" title="Instagram"></a>
+                    </li>
+                    <li class="mdl-mini-footer--social-btn">
+                        <a href="https://twitter.com" class="social-btn social-btn__twitter" role="button" title="Twitter"></a>
+                    </li>
+                    <li class="mdl-mini-footer--social-btn">
+                        <a href="https://youtube.com" class="social-btn social-btn__youtube" role="button" title="Youtube"></a>
+                    </li>
+                </ul>
+                <ul class="docs-link-list">
+                    <li>Copyright © 2018 Saval News. All rights reserved.</li>
+                </ul>
+            </footer>
+        </main>
+
+    </div>
+    <script type="text/javascript" src="../js/material.js"></script>
+    <script type="text/javascript" src="../js/jquery.js"></script>
+    <script type="text/javascript" src="../js/common.js"></script>
+
+    <script>
+        var news_full_data = ad_data = [];
+        var no_of_items = 7;
+        var page_no = 1;
+        var max_ads = 3;
+        var categoryId = 0;
+        var isEnglish = 1;
+
+        $(function() {
+            $("#pagination").pagination({
+                items: 100,
+                itemsOnPage: no_of_items,
+                cssStyle: 'light-theme'
+            });
+        });
+
+        //get_news_data();
+        //get_ad_data();
+
+        //function to get news data.......
+        function get_news_data() {
+
+            //        $("#loading_gif_div").fadeIn(100); 
+            var debug = 0;
+            var url = '../api/get_latest_news?isEnglish = 1&categoryId = 0&noOfNewsPerPage=7';
+            var type = 'GET';
+            var data = {
+                no_of_items: no_of_items,
+                page_no: page_no
+            };
+            $.ajax({
+                url: url,
+                type: type,
+                data: data,
+                success: function(response) {
+                    //                $("#loading_gif_div").fadeOut(100);
+                    if (debug == 1) {
+                        console.log(response);
+                    } else {
+                        var js_response = JSON.parse(response);
+                        //                  var result = js_response.result;
+                        news_full_data = js_response;
+                        append_news_data();
+                    }
+                },
+                error: function(jqXHR, exception, response) {
+                    $("#loading_gif_div").fadeOut(100);
+                    alert('Error!');
+                }
+            });
+        }
+
+        //function to append news data................
+        function append_news_data() {
+            if (news_full_data.length == 0) {
+                alert("No news found");
+                return;
+            }
+            $(function() {
+                $("#pagination").pagination({
+                    items: news_full_data.length,
+                    itemsOnPage: no_of_items,
+                    cssStyle: 'light-theme'
+                });
+            });
+            card_id = 1;
+            $.each(news_full_data, function(key, value) {
+                if (card_id > no_of_items) {
+                    return;
+                }
+
+                //order of append...........
+                //    post-card-category-1
+                //    post-card-headline-1
+                //    post-card-summary-1
+                //    post-card-publish-date-1
+                //    more-link-1
+                //    
+                //    post-img-1
+                //    post-img-link-1
+
+                //content values.......
+                $('#post-card-category-' + card_id).html(value['post-card-category']);
+                $('#post-card-headline-' + card_id).html(value['post-card-headline']);
+                $('#post-card-summary-' + card_id).html(value['post-summary']);
+                $('#post-card-pudlish-date-' + card_id).html(value['post-publish-date']);
+                $('#more-link-' + card_id).prop('href', value['more-link']);
+
+                //image links.............
+                $('#post-img-' + card_id).prop('src', value['post-img']);
+
+                //post links...........
+                $('#post-img-link-' + card_id).prop('href', value['post-img-link']);
+
+                card_id++;
+
+            });
+        }
+
+        //function to get ad data..............
+        function get_ad_data() {
+
+            $("#loading_gif_div").fadeIn(100);
+            var debug = 0;
+            var url = '../news/get_ad_data';
+            var type = 'POST';
+
+            $.ajax({
+                url: url,
+                type: type,
+                success: function(response) {
+                    $("#loading_gif_div").fadeOut(100);
+                    if (debug == 1) {
+                        console.log(response);
+                    } else {
+                        var js_response = JSON.parse(response);
+                        var result = js_response.result;
+                        ad_data = js_response;
+                        append_ad_data();
+                    }
+                },
+                error: function(jqXHR, exception, response) {
+                    $("#loading_gif_div").fadeOut(100);
+                    alert('Error!');
+                }
+            });
+        }
+
+        //function to append ad data................
+        function append_ad_data() {
+            if (ad_data.length <= 0) {
+                return;
+            }
+
+            ad_id = 1;
+            $.each(ad_data, function(key, value) {
+                if (ad_id > max - ads) {
+                    return;
+                }
+
+                //    main-ad-img-1
+                //    main-ad-link-1
+
+                //ad-img link...........
+                $('#main-ad-img-' + card_id).prop('src', value['ad-img']);
+
+                //ad link..............
+                $('#main-ad-link-' + card_id).prop('href', value['main-ad-link']);
+
+                ad_id++;
+            })
+        }
+    </script>
+</body>
+
+</html>
