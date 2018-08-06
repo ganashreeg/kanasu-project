@@ -1,0 +1,765 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>ಮಾನವ ಹಕ್ಕುಗಳ ರಕ್ಷಣೆ ಹಾಗೂ ಭ್ರಷ್ಟಾಚಾರ ನಿರ್ಮೂಲನಾ ಸಂಸ್ಥೆ</title>
+    <link href="img/logo.png" rel="icon">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="Paper" content="Daily News ">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" type="text/css" href="css/material.css">
+    <link rel="stylesheet" type="text/css" href="css/common-style.css">
+    <link rel="stylesheet" type="text/css" href="css/simplePagination.css">
+
+    <style>
+        .demo-layout-waterfall .mdl-layout__header-row .mdl-navigation__link:last-of-type {
+            padding-right: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="demo-layout-waterfall mdl-layout mdl-js-layout mdl-layout--fixed-header">
+        <!-- Top Navigation bar -->
+        <header class="android-header mdl-layout__header mdl-layout__header--waterfall">
+            <div class="mdl-layout__header-row">
+                <span class="android-title mdl-layout-title">
+						<img class="android-logo-image" src="img/hracorglogo.png">
+					</span>
+                <!-- Add spacer, to align navigation to the right in desktop -->
+                <div class="android-header-spacer mdl-layout-spacer"></div>
+                <div class="android-search-box mdl-textfield mdl-js-textfield mdl-textfield--expandable mdl-textfield--floating-label mdl-textfield--align-right mdl-textfield--full-width">
+                    <label class="mdl-button mdl-js-button mdl-button--icon" for="search-field">
+							<i class="material-icons">search</i>
+						</label>
+                    <div class="mdl-textfield__expandable-holder">
+                        <input class="mdl-textfield__input" type="text" id="search-field">
+                    </div>
+                </div>
+                <!-- Navigation -->
+                <div class="android-navigation-container">
+                    <nav class="android-navigation mdl-navigation">
+                        <a class="mdl-button mdl-js-button mdl-button--icon" href="index.html">
+							<i class="material-icons">home</i>
+						</a>
+                        <a class="mdl-navigation__link mdl-typography--text-uppercase" href="page/about.html">ನಮ್ಮ ಬಗ್ಗೆ</a>
+                        <a class="mdl-navigation__link mdl-typography--text-uppercase mdl-js-button mdl-button " id="developers-dropdown">ವಿಭಾಗಗಳು<i class="material-icons">arrow_drop_down</i></a>
+                        <ul class="mdl-menu mdl-js-menu mdl-menu--bottom-left mdl-js-ripple-effect" for="developers-dropdown">
+                            <a class="headline_a" href="page/category.html"><li class="mdl-menu__item">ಕಾನೂನು</li></a> 
+                                  <a class="headline_a" href="page/category.html"><li class="mdl-menu__item">ಶಿಕ್ಷಣ</li></a>
+                                  <a class="headline_a" href="page/category.html"><li class="mdl-menu__item">ಆರೋಗ್ಯ</li></a>
+                                  <a class="headline_a" href="page/category.html"><li class="mdl-menu__item">ಸ್ವ ಉದ್ಯೋಗ</li></a>
+                                  <a class="headline_a" href="page/category.html"><li class="mdl-menu__item">ಸಾಂಸ್ಕೃತಿಕ</li></a>
+                                  <a class="headline_a" href="page/category.html"><li class="mdl-menu__item">ಹಸಿರೋತ್ಸವ</li></a>
+                                  <a class="headline_a" href="page/category.html"><li class="mdl-menu__item">ವೃದ್ಧಾಶ್ರಮ</li></a>
+                        </ul>
+                        <a class="mdl-navigation__link mdl-typography--text-uppercase mdl-js-button mdl-button " id="developers-dropdown-two">ನೋಂದಣಿ<i class="material-icons">arrow_drop_down</i></a>
+                        <ul class="mdl-menu mdl-js-menu mdl-menu--bottom-left mdl-js-ripple-effect" for="developers-dropdown-two">
+                            <a class="headline_a" href="page/memberdetail.html"><li class="mdl-menu__item">ನೋಂದಣಿ ವಿವರಣೆ</li></a> 
+                                  <a class="headline_a" href="page/member.html"><li class="mdl-menu__item">ನೋಂದಣಿ ನಮೂನೆ</li></a>
+                                 
+                        </ul>
+                        <a class="mdl-navigation__link mdl-typography--text-uppercase" href="page/contact.html">ಸಂಪರ್ಕಿಸಿ</a>
+                        <a class="mdl-navigation__link mdl-typography--text-uppercase" href="index-en.html">English</a>
+
+                    </nav>
+                </div>
+                <span class="android-mobile-title mdl-layout-title">
+						<img class="android-logo-image center" src="img/hracorglogo.png">
+					</span>
+            </div>
+
+        </header>
+
+        <div id=show-info></div>
+
+        <div class="android-drawer mdl-layout__drawer">
+            <span class="mdl-layout-title"></span>
+            <nav class="mdl-navigation">
+                <a class="mdl-navigation__link mdl-typography--text-uppercase" href="index.html">ಮುಖಪುಟ</a>
+                <a class="mdl-navigation__link mdl-typography--text-uppercase" href="page/about.html">ನಮ್ಮ ಬಗ್</a>
+                <div class="android-drawer-separator"></div>
+                <a class="mdl-navigation__link" href="page/category.html">ಕಾನೂನು</a>
+                <a class="mdl-navigation__link" href="page/category.html">ಶಿಕ್ಷಣ</a>
+                <a class="mdl-navigation__link" href="page/category.html">ಆರೋಗ್</a>
+                <a class="mdl-navigation__link" href="page/category.html">ಸ್ವ ಉದ್ಯೋಗ</a>
+                <a class="mdl-navigation__link" href="page/category.html">ಸಾಂಸ್ಕೃತಿಕ</a>
+                <a class="mdl-navigation__link" href="page/category.html">ಹಸಿರೋತ್ಸವ</a>
+                <a class="mdl-navigation__link" href="page/category.html">ವೃದ್ಧಾಶ್ರಮ</a>
+                <div class="android-drawer-separator"></div>
+                <a class="mdl-navigation__link mdl-typography--text-uppercase" href="page/memberdetail.html">ನೋಂದಣಿ ವಿವರಣೆ</a>
+                <a class="mdl-navigation__link mdl-typography--text-uppercase" href="page/member.html">ನೋಂದಣಿ ನಮೂನೆ</a>
+                <a class="mdl-navigation__link mdl-typography--text-uppercase" href="page/contact.html">ಸಂಪರ್ಕಿಸಿ</a>
+                <div class="android-drawer-separator"></div>
+                <a class="mdl-navigation__link" href="index-en.html">English Language</a>
+                <a class="mdl-navigation__link" href="saval.ogmatech.in">www.saval.ogmatech.in</a>
+                <a class="mdl-navigation__link" href="kanasu.org">www.kanasu.org</a>
+            </nav>
+        </div>
+        <main class="mdl-layout__content">
+
+            <!-- Main Section -->
+            <section class="mdl-grid mdl-grid--no-spacing" style="background-color: #c3eac4">
+                <!-- Empty space div -->
+                <div class="mdl-cell mdl-cell--2-col-desktop mdl-cell--2-col-tablet mdl-cell--12-col-phone"></div>
+                <!-- Main content div -->
+                <div class="mdl-cell mdl-cell--8-col-desktop mdl-cell--8-col-tablet mdl-cell--12-col-phone">
+                    <center><img class="header-img" src="img/hracorggreen.jpg" style="width: 60%; max-height: 200px"></center>
+                    <section class="mdl-grid mdl-grid--no-spacing" style="padding-top: 8px;padding-bottom: 8px">
+                        <div class="mdl-cell mdl-cell--3-col-desktop mdl-cell--12-col-phone datelinks">
+                            <a href="https://play.google.com"><img style="object-fit: contain;width: 100%;height: 100%" src="img/gplay.png"></a>
+                        </div>
+                        <div class="mdl-cell mdl-cell--6-col-desktop mdl-cell--12-col-phone datelinks">
+                            <center>
+                                <div class="today_date" id="todayDate"></div>
+                            </center>
+                        </div>
+                        <div class="mdl-cell mdl-cell--3-col-desktop mdl-cell--12-col-phone datelinks">
+                            <center><a href="https://facebook.com"><img src="img/facebook.png"></a>
+                                <a href="https://twitter.com"><img src="img/twitter.png"></a>
+                                <a href="https://instagram.com"><img src="img/instagram.png"></a>
+                                <a href="https://youtube.com"><img src="img/youtube.png"></a></center>
+                        </div>
+                    </section>
+
+
+                    <!-- 1st Row -->
+                    <div class="mdl-grid mdl-grid--no-spacing">
+                        <div class="content_card_1 mdl-cell mdl-cell--1-col-desktop mdl-cell--12-col-phone post_card"></div>
+                        <div class="content_card_1 mdl-cell mdl-cell--10-col-desktop mdl-cell--12-col-phone post_card">
+
+                            <section class="mdl-grid mdl-grid--no-spacing">
+                                <div class="mdl-cell mdl-cell--8-col-desktop mdl-cell--12-col-phone post_card_info">
+                                    <div id="post-card-category" class="post_card_category"><a href="page/category.html">Tuesday</a></div>
+                                    <div id="post-card-headline" class="post_card_headline">
+                                        <a class="headline_a" href="page/detail.html"><h5>Pervert Trouble At K.R. Hospital Nursing Students: Students Go On Leave En Masse</h5></a>
+                                    </div>
+                                    <span class="hedline_divider"></span>
+                                    <div id="post-card-summary" class="post_card_summary">
+                                        <p>Mysuru: The 112 nursing students including three male students, who had protested seeking adequate security following perverts entering the Girls Nur...</p>
+                                    </div>
+                                    <div>
+                                        <div id="post-card-publish-date" class="post_card_publish_date">July 10, 2018</div>
+                                        <div><a id="more-link" class="morelink" href="page/detail.html">Read more... <i class="material-icons"  style="vertical-align: middle;">arrow_right_alt</i></a></div>
+                                    </div>
+                                </div>
+                                <div class="mdl-cell mdl-cell--4-col-desktop mdl-cell--12-col-phone post_card_img">
+                                    <div class="parent_img">
+                                        <a id="post-img-link" href="page/detail.html"><img id="post-img" class="post_img img_all" src="img/news-2.jpg"></a>
+                                        <img id="is-video" class="child_img" src="img/ic_video.png" />
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                        <div class="ad_content_1 mdl-cell mdl-cell--1-col-desktop mdl-cell--12-col-phone post_card"></div>
+                    </div>
+
+
+
+
+
+
+                    <section class="mdl-grid mdl-grid--no-spacing">
+
+                        <div class="mdl-grid mdl-grid--no-spacing">
+                            <h4>ಕಾನೂನು</h4>
+                            
+                        </div>
+                        <div class="head_divider"></div>
+
+                        <div class="mdl-grid mdl-grid--no-spacing">
+                            <div class="content_card_3 mdl-cell mdl-cell--3-col-desktop mdl-cell--6-col-tablet mdl-cell--12-col-phone post_card_four_img">
+                                <div class="parent_img">
+                                    <a id="post-img-link" href="page/detail.html"><img id="post-img" class="post_img img_all" src="img/news-2.jpg"></a>
+                                    <img id="is-video" class="child_img" src="img/ic_video.png" />
+                                </div>
+                                <div id="post-four-summary" class="post_four_summary">
+                                    <a class="headline_a" href="page/detail.html"><p>Mysuru: The 112 nursing students including adequate entering the Girls Nur...</p></a>
+                                </div>
+                            </div>
+
+                            <div class="content_card_3 mdl-cell mdl-cell--3-col-desktop mdl-cell--6-col-tablet mdl-cell--12-col-phone post_card_four_img">
+                                <div class="parent_img">
+                                    <a id="post-img-link" href="page/detail.html"><img id="post-img" class="post_img img_all" src="img/news-2.jpg"></a>
+                                    <img id="is-video" class="child_img" src="img/ic_video.png" />
+                                </div>
+                                <div id="post-four-summary" class="post_four_summary">
+                                    <a class="headline_a" href="page/detail.html"><p>Mysuru: The 112 nursing students including adequate entering the Girls Nur...</p></a>
+                                </div>
+                            </div>
+
+                            <div class="content_card_3 mdl-cell mdl-cell--3-col-desktop mdl-cell--6-col-tablet mdl-cell--12-col-phone post_card_four_img">
+                                <div class="parent_img">
+                                    <a id="post-img-link" href="page/detail.html"><img id="post-img" class="post_img img_all" src="img/news-2.jpg"></a>
+                                    <img id="is-video" class="child_img" src="img/ic_video.png" />
+                                </div>
+                                <div id="post-four-summary" class="post_four_summary">
+                                    <a class="headline_a" href="page/detail.html"><p>Mysuru: The 112 nursing students including adequate entering the Girls Nur...</p></a>
+                                </div>
+                            </div>
+
+                            <div class="content_card_3 mdl-cell mdl-cell--3-col-desktop mdl-cell--6-col-tablet mdl-cell--12-col-phone post_card_four_img">
+                                <div class="parent_img">
+                                    <a id="post-img-link" href="page/detail.html"><img id="post-img" class="post_img img_all" src="img/news-2.jpg"></a>
+                                    <img id="is-video" class="child_img" src="img/ic_video.png" />
+                                </div>
+                                <div id="post-four-summary" class="post_four_summary">
+                                    <a class="headline_a" href="page/detail.html"><p>Mysuru: The 112 nursing students including adequate entering the Girls Nur...</p></a>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="mdl-grid mdl-grid--no-spacing">
+
+                            <div><a id="more-link" class="morelink" href="page/category.html">Read more... <i class="material-icons"  style="vertical-align: middle;">arrow_right_alt</i></a></div>
+                        </div>
+                    </section>
+
+
+
+                    <section class="mdl-grid mdl-grid--no-spacing">
+
+                        <div class="mdl-grid mdl-grid--no-spacing">
+                            <h4>ಶಿಕ್ಷಣ</h4>
+                            
+                        </div>
+                        <div class="head_divider"></div>
+
+                        <div class="mdl-grid mdl-grid--no-spacing">
+                            <div class="content_card_3 mdl-cell mdl-cell--3-col-desktop mdl-cell--6-col-tablet mdl-cell--12-col-phone post_card_four_img">
+                                <div class="parent_img">
+                                    <a id="post-img-link" href="page/detail.html"><img id="post-img" class="post_img img_all" src="img/news-2.jpg"></a>
+                                    <img id="is-video" class="child_img" src="img/ic_video.png" />
+                                </div>
+                                <div id="post-four-summary" class="post_four_summary">
+                                    <a class="headline_a" href="page/detail.html"><p>Mysuru: The 112 nursing students including adequate entering the Girls Nur...</p></a>
+                                </div>
+                            </div>
+
+                            <div class="content_card_3 mdl-cell mdl-cell--3-col-desktop mdl-cell--6-col-tablet mdl-cell--12-col-phone post_card_four_img">
+                                <div class="parent_img">
+                                    <a id="post-img-link" href="page/detail.html"><img id="post-img" class="post_img img_all" src="img/news-2.jpg"></a>
+                                    <img id="is-video" class="child_img" src="img/ic_video.png" />
+                                </div>
+                                <div id="post-four-summary" class="post_four_summary">
+                                    <a class="headline_a" href="page/detail.html"><p>Mysuru: The 112 nursing students including adequate entering the Girls Nur...</p></a>
+                                </div>
+                            </div>
+
+                            <div class="content_card_3 mdl-cell mdl-cell--3-col-desktop mdl-cell--6-col-tablet mdl-cell--12-col-phone post_card_four_img">
+                                <div class="parent_img">
+                                    <a id="post-img-link" href="page/detail.html"><img id="post-img" class="post_img img_all" src="img/news-2.jpg"></a>
+                                    <img id="is-video" class="child_img" src="img/ic_video.png" />
+                                </div>
+                                <div id="post-four-summary" class="post_four_summary">
+                                    <a class="headline_a" href="page/detail.html"><p>Mysuru: The 112 nursing students including adequate entering the Girls Nur...</p></a>
+                                </div>
+                            </div>
+
+                            <div class="content_card_3 mdl-cell mdl-cell--3-col-desktop mdl-cell--6-col-tablet mdl-cell--12-col-phone post_card_four_img">
+                                <div class="parent_img">
+                                    <a id="post-img-link" href="page/detail.html"><img id="post-img" class="post_img img_all" src="img/news-2.jpg"></a>
+                                    <img id="is-video" class="child_img" src="img/ic_video.png" />
+                                </div>
+                                <div id="post-four-summary" class="post_four_summary">
+                                    <a class="headline_a" href="page/detail.html"><p>Mysuru: The 112 nursing students including adequate entering the Girls Nur...</p></a>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="mdl-grid mdl-grid--no-spacing">
+
+                            <div><a id="more-link" class="morelink" href="page/category.html">Read more... <i class="material-icons"  style="vertical-align: middle;">arrow_right_alt</i></a></div>
+                        </div>
+                    </section>
+
+
+
+
+                    <section class="mdl-grid mdl-grid--no-spacing">
+
+                        <div class="mdl-grid mdl-grid--no-spacing">
+                            <h4>ಆರೋಗ್ಯ</h4>
+                            
+                        </div>
+                        <div class="head_divider"></div>
+
+                        <div class="mdl-grid mdl-grid--no-spacing">
+                            <div class="content_card_3 mdl-cell mdl-cell--3-col-desktop mdl-cell--6-col-tablet mdl-cell--12-col-phone post_card_four_img">
+                                <div class="parent_img">
+                                    <a id="post-img-link" href="page/detail.html"><img id="post-img" class="post_img img_all" src="img/news-2.jpg"></a>
+                                    <img id="is-video" class="child_img" src="img/ic_video.png" />
+                                </div>
+                                <div id="post-four-summary" class="post_four_summary">
+                                    <a class="headline_a" href="page/detail.html"><p>Mysuru: The 112 nursing students including adequate entering the Girls Nur...</p></a>
+                                </div>
+                            </div>
+
+                            <div class="content_card_3 mdl-cell mdl-cell--3-col-desktop mdl-cell--6-col-tablet mdl-cell--12-col-phone post_card_four_img">
+                                <div class="parent_img">
+                                    <a id="post-img-link" href="page/detail.html"><img id="post-img" class="post_img img_all" src="img/news-2.jpg"></a>
+                                    <img id="is-video" class="child_img" src="img/ic_video.png" />
+                                </div>
+                                <div id="post-four-summary" class="post_four_summary">
+                                    <a class="headline_a" href="page/detail.html"><p>Mysuru: The 112 nursing students including adequate entering the Girls Nur...</p></a>
+                                </div>
+                            </div>
+
+                            <div class="content_card_3 mdl-cell mdl-cell--3-col-desktop mdl-cell--6-col-tablet mdl-cell--12-col-phone post_card_four_img">
+                                <div class="parent_img">
+                                    <a id="post-img-link" href="page/detail.html"><img id="post-img" class="post_img img_all" src="img/news-2.jpg"></a>
+                                    <img id="is-video" class="child_img" src="img/ic_video.png" />
+                                </div>
+                                <div id="post-four-summary" class="post_four_summary">
+                                    <a class="headline_a" href="page/detail.html"><p>Mysuru: The 112 nursing students including adequate entering the Girls Nur...</p></a>
+                                </div>
+                            </div>
+
+                            <div class="content_card_3 mdl-cell mdl-cell--3-col-desktop mdl-cell--6-col-tablet mdl-cell--12-col-phone post_card_four_img">
+                                <div class="parent_img">
+                                    <a id="post-img-link" href="page/detail.html"><img id="post-img" class="post_img img_all" src="img/news-2.jpg"></a>
+                                    <img id="is-video" class="child_img" src="img/ic_video.png" />
+                                </div>
+                                <div id="post-four-summary" class="post_four_summary">
+                                    <a class="headline_a" href="page/detail.html"><p>Mysuru: The 112 nursing students including adequate entering the Girls Nur...</p></a>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="mdl-grid mdl-grid--no-spacing">
+
+                            <div><a id="more-link" class="morelink" href="page/category.html">Read more... <i class="material-icons"  style="vertical-align: middle;">arrow_right_alt</i></a></div>
+                        </div>
+                    </section>
+
+
+
+                    <section class="mdl-grid mdl-grid--no-spacing">
+
+                        <div class="mdl-grid mdl-grid--no-spacing">
+                            <h4>ಸ್ವ ಉದ್ಯೋಗ</h4>
+                            
+                        </div>
+                        <div class="head_divider"></div>
+
+                        <div class="mdl-grid mdl-grid--no-spacing">
+                            <div class="content_card_3 mdl-cell mdl-cell--3-col-desktop mdl-cell--6-col-tablet mdl-cell--12-col-phone post_card_four_img">
+                                <div class="parent_img">
+                                    <a id="post-img-link" href="page/detail.html"><img id="post-img" class="post_img img_all" src="img/news-2.jpg"></a>
+                                    <img id="is-video" class="child_img" src="img/ic_video.png" />
+                                </div>
+                                <div id="post-four-summary" class="post_four_summary">
+                                    <a class="headline_a" href="page/detail.html"><p>Mysuru: The 112 nursing students including adequate entering the Girls Nur...</p></a>
+                                </div>
+                            </div>
+
+                            <div class="content_card_3 mdl-cell mdl-cell--3-col-desktop mdl-cell--6-col-tablet mdl-cell--12-col-phone post_card_four_img">
+                                <div class="parent_img">
+                                    <a id="post-img-link" href="page/detail.html"><img id="post-img" class="post_img img_all" src="img/news-2.jpg"></a>
+                                    <img id="is-video" class="child_img" src="img/ic_video.png" />
+                                </div>
+                                <div id="post-four-summary" class="post_four_summary">
+                                    <a class="headline_a" href="page/detail.html"><p>Mysuru: The 112 nursing students including adequate entering the Girls Nur...</p></a>
+                                </div>
+                            </div>
+
+                            <div class="content_card_3 mdl-cell mdl-cell--3-col-desktop mdl-cell--6-col-tablet mdl-cell--12-col-phone post_card_four_img">
+                                <div class="parent_img">
+                                    <a id="post-img-link" href="page/detail.html"><img id="post-img" class="post_img img_all" src="img/news-2.jpg"></a>
+                                    <img id="is-video" class="child_img" src="img/ic_video.png" />
+                                </div>
+                                <div id="post-four-summary" class="post_four_summary">
+                                    <a class="headline_a" href="page/detail.html"><p>Mysuru: The 112 nursing students including adequate entering the Girls Nur...</p></a>
+                                </div>
+                            </div>
+
+                            <div class="content_card_3 mdl-cell mdl-cell--3-col-desktop mdl-cell--6-col-tablet mdl-cell--12-col-phone post_card_four_img">
+                                <div class="parent_img">
+                                    <a id="post-img-link" href="page/detail.html"><img id="post-img" class="post_img img_all" src="img/news-2.jpg"></a>
+                                    <img id="is-video" class="child_img" src="img/ic_video.png" />
+                                </div>
+                                <div id="post-four-summary" class="post_four_summary">
+                                    <a class="headline_a" href="page/detail.html"><p>Mysuru: The 112 nursing students including adequate entering the Girls Nur...</p></a>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="mdl-grid mdl-grid--no-spacing">
+
+                            <div><a id="more-link" class="morelink" href="page/category.html">Read more... <i class="material-icons"  style="vertical-align: middle;">arrow_right_alt</i></a></div>
+                        </div>
+                    </section>
+
+
+
+
+                    <section class="mdl-grid mdl-grid--no-spacing">
+
+                        <div class="mdl-grid mdl-grid--no-spacing">
+                            <h4>ಸಾಂಸ್ಕೃತಿಕ</h4>
+                            
+                        </div>
+                        <div class="head_divider"></div>
+
+                        <div class="mdl-grid mdl-grid--no-spacing">
+                            <div class="content_card_3 mdl-cell mdl-cell--3-col-desktop mdl-cell--6-col-tablet mdl-cell--12-col-phone post_card_four_img">
+                                <div class="parent_img">
+                                    <a id="post-img-link" href="page/detail.html"><img id="post-img" class="post_img img_all" src="img/news-2.jpg"></a>
+                                    <img id="is-video" class="child_img" src="img/ic_video.png" />
+                                </div>
+                                <div id="post-four-summary" class="post_four_summary">
+                                    <a class="headline_a" href="page/detail.html"><p>Mysuru: The 112 nursing students including adequate entering the Girls Nur...</p></a>
+                                </div>
+                            </div>
+
+                            <div class="content_card_3 mdl-cell mdl-cell--3-col-desktop mdl-cell--6-col-tablet mdl-cell--12-col-phone post_card_four_img">
+                                <div class="parent_img">
+                                    <a id="post-img-link" href="page/detail.html"><img id="post-img" class="post_img img_all" src="img/news-2.jpg"></a>
+                                    <img id="is-video" class="child_img" src="img/ic_video.png" />
+                                </div>
+                                <div id="post-four-summary" class="post_four_summary">
+                                    <a class="headline_a" href="page/detail.html"><p>Mysuru: The 112 nursing students including adequate entering the Girls Nur...</p></a>
+                                </div>
+                            </div>
+
+                            <div class="content_card_3 mdl-cell mdl-cell--3-col-desktop mdl-cell--6-col-tablet mdl-cell--12-col-phone post_card_four_img">
+                                <div class="parent_img">
+                                    <a id="post-img-link" href="page/detail.html"><img id="post-img" class="post_img img_all" src="img/news-2.jpg"></a>
+                                    <img id="is-video" class="child_img" src="img/ic_video.png" />
+                                </div>
+                                <div id="post-four-summary" class="post_four_summary">
+                                    <a class="headline_a" href="page/detail.html"><p>Mysuru: The 112 nursing students including adequate entering the Girls Nur...</p></a>
+                                </div>
+                            </div>
+
+                            <div class="content_card_3 mdl-cell mdl-cell--3-col-desktop mdl-cell--6-col-tablet mdl-cell--12-col-phone post_card_four_img">
+                                <div class="parent_img">
+                                    <a id="post-img-link" href="page/detail.html"><img id="post-img" class="post_img img_all" src="img/news-2.jpg"></a>
+                                    <img id="is-video" class="child_img" src="img/ic_video.png" />
+                                </div>
+                                <div id="post-four-summary" class="post_four_summary">
+                                    <a class="headline_a" href="page/detail.html"><p>Mysuru: The 112 nursing students including adequate entering the Girls Nur...</p></a>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="mdl-grid mdl-grid--no-spacing">
+
+                            <div><a id="more-link" class="morelink" href="page/category.html">Read more... <i class="material-icons"  style="vertical-align: middle;">arrow_right_alt</i></a></div>
+                        </div>
+                    </section>
+
+
+
+                    <section class="mdl-grid mdl-grid--no-spacing">
+
+                        <div class="mdl-grid mdl-grid--no-spacing">
+                            <h4>ಹಸಿರೋತ್ಸವ</h4>
+                            
+                        </div>
+                        <div class="head_divider"></div>
+
+                        <div class="mdl-grid mdl-grid--no-spacing">
+                            <div class="content_card_3 mdl-cell mdl-cell--3-col-desktop mdl-cell--6-col-tablet mdl-cell--12-col-phone post_card_four_img">
+                                <div class="parent_img">
+                                    <a id="post-img-link" href="page/detail.html"><img id="post-img" class="post_img img_all" src="img/news-2.jpg"></a>
+                                    <img id="is-video" class="child_img" src="img/ic_video.png" />
+                                </div>
+                                <div id="post-four-summary" class="post_four_summary">
+                                    <a class="headline_a" href="page/detail.html"><p>Mysuru: The 112 nursing students including adequate entering the Girls Nur...</p></a>
+                                </div>
+                            </div>
+
+                            <div class="content_card_3 mdl-cell mdl-cell--3-col-desktop mdl-cell--6-col-tablet mdl-cell--12-col-phone post_card_four_img">
+                                <div class="parent_img">
+                                    <a id="post-img-link" href="page/detail.html"><img id="post-img" class="post_img img_all" src="img/news-2.jpg"></a>
+                                    <img id="is-video" class="child_img" src="img/ic_video.png" />
+                                </div>
+                                <div id="post-four-summary" class="post_four_summary">
+                                    <a class="headline_a" href="page/detail.html"><p>Mysuru: The 112 nursing students including adequate entering the Girls Nur...</p></a>
+                                </div>
+                            </div>
+
+                            <div class="content_card_3 mdl-cell mdl-cell--3-col-desktop mdl-cell--6-col-tablet mdl-cell--12-col-phone post_card_four_img">
+                                <div class="parent_img">
+                                    <a id="post-img-link" href="page/detail.html"><img id="post-img" class="post_img img_all" src="img/news-2.jpg"></a>
+                                    <img id="is-video" class="child_img" src="img/ic_video.png" />
+                                </div>
+                                <div id="post-four-summary" class="post_four_summary">
+                                    <a class="headline_a" href="page/detail.html"><p>Mysuru: The 112 nursing students including adequate entering the Girls Nur...</p></a>
+                                </div>
+                            </div>
+
+                            <div class="content_card_3 mdl-cell mdl-cell--3-col-desktop mdl-cell--6-col-tablet mdl-cell--12-col-phone post_card_four_img">
+                                <div class="parent_img">
+                                    <a id="post-img-link" href="page/detail.html"><img id="post-img" class="post_img img_all" src="img/news-2.jpg"></a>
+                                    <img id="is-video" class="child_img" src="img/ic_video.png" />
+                                </div>
+                                <div id="post-four-summary" class="post_four_summary">
+                                    <a class="headline_a" href="page/detail.html"><p>Mysuru: The 112 nursing students including adequate entering the Girls Nur...</p></a>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="mdl-grid mdl-grid--no-spacing">
+
+                            <div><a id="more-link" class="morelink" href="page/category.html">Read more... <i class="material-icons"  style="vertical-align: middle;">arrow_right_alt</i></a></div>
+                        </div>
+                    </section>
+
+
+
+                    <section class="mdl-grid mdl-grid--no-spacing">
+
+                        <div class="mdl-grid mdl-grid--no-spacing">
+                            <h4>ವೃದ್ಧಾಶ್ರಮ</h4>
+                            
+                        </div>
+                        <div class="head_divider"></div>
+
+                        <div class="mdl-grid mdl-grid--no-spacing">
+                            <div class="content_card_3 mdl-cell mdl-cell--3-col-desktop mdl-cell--6-col-tablet mdl-cell--12-col-phone post_card_four_img">
+                                <div class="parent_img">
+                                    <a id="post-img-link" href="page/detail.html"><img id="post-img" class="post_img img_all" src="img/news-2.jpg"></a>
+                                    <img id="is-video" class="child_img" src="img/ic_video.png" />
+                                </div>
+                                <div id="post-four-summary" class="post_four_summary">
+                                    <a class="headline_a" href="page/detail.html"><p>Mysuru: The 112 nursing students including adequate entering the Girls Nur...</p></a>
+                                </div>
+                            </div>
+
+                            <div class="content_card_3 mdl-cell mdl-cell--3-col-desktop mdl-cell--6-col-tablet mdl-cell--12-col-phone post_card_four_img">
+                                <div class="parent_img">
+                                    <a id="post-img-link" href="page/detail.html"><img id="post-img" class="post_img img_all" src="img/news-2.jpg"></a>
+                                    <img id="is-video" class="child_img" src="img/ic_video.png" />
+                                </div>
+                                <div id="post-four-summary" class="post_four_summary">
+                                    <a class="headline_a" href="page/detail.html"><p>Mysuru: The 112 nursing students including adequate entering the Girls Nur...</p></a>
+                                </div>
+                            </div>
+
+                            <div class="content_card_3 mdl-cell mdl-cell--3-col-desktop mdl-cell--6-col-tablet mdl-cell--12-col-phone post_card_four_img">
+                                <div class="parent_img">
+                                    <a id="post-img-link" href="page/detail.html"><img id="post-img" class="post_img img_all" src="img/news-2.jpg"></a>
+                                    <img id="is-video" class="child_img" src="img/ic_video.png" />
+                                </div>
+                                <div id="post-four-summary" class="post_four_summary">
+                                    <a class="headline_a" href="page/detail.html"><p>Mysuru: The 112 nursing students including adequate entering the Girls Nur...</p></a>
+                                </div>
+                            </div>
+
+                            <div class="content_card_3 mdl-cell mdl-cell--3-col-desktop mdl-cell--6-col-tablet mdl-cell--12-col-phone post_card_four_img">
+                                <div class="parent_img">
+                                    <a id="post-img-link" href="page/detail.html"><img id="post-img" class="post_img img_all" src="img/news-2.jpg"></a>
+                                    <img id="is-video" class="child_img" src="img/ic_video.png" />
+                                </div>
+                                <div id="post-four-summary" class="post_four_summary">
+                                    <a class="headline_a" href="page/detail.html"><p>Mysuru: The 112 nursing students including adequate entering the Girls Nur...</p></a>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="mdl-grid mdl-grid--no-spacing">
+
+                            <div><a id="more-link" class="morelink" href="page/category.html">Read more... <i class="material-icons"  style="vertical-align: middle;">arrow_right_alt</i></a></div>
+                        </div>
+                    </section>
+
+
+
+
+
+
+
+
+                </div>
+                <div class="mdl-cell mdl-cell--2-col-desktop mdl-cell--2-col-tablet mdl-cell--12-col-phone"></div>
+            </section>
+            <footer class="docs-text-styling docs-footer mdl-mini-footer mdl-color--grey-900">
+                <ul>
+                    <li class="mdl-mini-footer--social-btn">
+                        <a href="https://facebook.com" class="social-btn social-btn__facebook" role="button" title="Facebook"></a>
+                    </li>
+                    <li class="mdl-mini-footer--social-btn">
+                        <a href="https://instagram.com" class="social-btn social-btn__instagram" role="button" title="Instagram"></a>
+                    </li>
+                    <li class="mdl-mini-footer--social-btn">
+                        <a href="https://twitter.com" class="social-btn social-btn__twitter" role="button" title="Twitter"></a>
+                    </li>
+                    <li class="mdl-mini-footer--social-btn">
+                        <a href="https://youtube.com" class="social-btn social-btn__youtube" role="button" title="Youtube"></a>
+                    </li>
+                </ul>
+                <ul class="docs-link-list">
+                    <li>Copyright © 2018 Kanasu Creations. All rights reserved.</li>
+                </ul>
+            </footer>
+        </main>
+
+    </div>
+    <script type="text/javascript" src="js/material.js"></script>
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/common.js"></script>
+    <script type="text/javascript" src="js/modal.js"></script>
+
+    <script>
+        var news_full_data = ad_data = [];
+        var no_of_items = 7;
+        var page_no = 1;
+        var max_ads = 3;
+        var categoryId = 0;
+        var isEnglish = 1;
+
+        $(function() {
+            $("#pagination").pagination({
+                items: 100,
+                itemsOnPage: no_of_items,
+                cssStyle: 'light-theme'
+            });
+        });
+
+        //get_news_data();
+        //get_ad_data();
+
+        //function to get news data.......
+        function get_news_data() {
+
+            //        $("#loading_gif_div").fadeIn(100); 
+            var debug = 0;
+            var url = '../api/get_latest_news?isEnglish = 1&categoryId = 0&noOfNewsPerPage=7';
+            var type = 'GET';
+            var data = {
+                no_of_items: no_of_items,
+                page_no: page_no
+            };
+            $.ajax({
+                url: url,
+                type: type,
+                data: data,
+                success: function(response) {
+                    //                $("#loading_gif_div").fadeOut(100);
+                    if (debug == 1) {
+                        console.log(response);
+                    } else {
+                        var js_response = JSON.parse(response);
+                        //                  var result = js_response.result;
+                        news_full_data = js_response;
+                        append_news_data();
+                    }
+                },
+                error: function(jqXHR, exception, response) {
+                    $("#loading_gif_div").fadeOut(100);
+                    alert('Error!');
+                }
+            });
+        }
+
+        //function to append news data................
+        function append_news_data() {
+            if (news_full_data.length == 0) {
+                alert("No news found");
+                return;
+            }
+            $(function() {
+                $("#pagination").pagination({
+                    items: news_full_data.length,
+                    itemsOnPage: no_of_items,
+                    cssStyle: 'light-theme'
+                });
+            });
+            card_id = 1;
+            $.each(news_full_data, function(key, value) {
+                if (card_id > no_of_items) {
+                    return;
+                }
+
+                //order of append...........
+                //    post-card-category-1
+                //    post-card-headline-1
+                //    post-card-summary-1
+                //    post-card-publish-date-1
+                //    more-link-1
+                //    
+                //    post-img-1
+                //    post-img-link-1
+
+                //content values.......
+                $('#post-card-category-' + card_id).html(value['post-card-category']);
+                $('#post-card-headline-' + card_id).html(value['post-card-headline']);
+                $('#post-card-summary-' + card_id).html(value['post-summary']);
+                $('#post-card-pudlish-date-' + card_id).html(value['post-publish-date']);
+                $('#more-link-' + card_id).prop('href', value['more-link']);
+
+                //image links.............
+                $('#post-img-' + card_id).prop('src', value['post-img']);
+
+                //post links...........
+                $('#post-img-link-' + card_id).prop('href', value['post-img-link']);
+
+                card_id++;
+
+            });
+        }
+
+        //function to get ad data..............
+        function get_ad_data() {
+
+            $("#loading_gif_div").fadeIn(100);
+            var debug = 0;
+            var url = '../news/get_ad_data';
+            var type = 'POST';
+
+            $.ajax({
+                url: url,
+                type: type,
+                success: function(response) {
+                    $("#loading_gif_div").fadeOut(100);
+                    if (debug == 1) {
+                        console.log(response);
+                    } else {
+                        var js_response = JSON.parse(response);
+                        var result = js_response.result;
+                        ad_data = js_response;
+                        append_ad_data();
+                    }
+                },
+                error: function(jqXHR, exception, response) {
+                    $("#loading_gif_div").fadeOut(100);
+                    alert('Error!');
+                }
+            });
+        }
+
+        //function to append ad data................
+        function append_ad_data() {
+            if (ad_data.length <= 0) {
+                return;
+            }
+
+            ad_id = 1;
+            $.each(ad_data, function(key, value) {
+                if (ad_id > max - ads) {
+                    return;
+                }
+
+                //    main-ad-img-1
+                //    main-ad-link-1
+
+                //ad-img link...........
+                $('#main-ad-img-' + card_id).prop('src', value['ad-img']);
+
+                //ad link..............
+                $('#main-ad-link-' + card_id).prop('href', value['main-ad-link']);
+
+                ad_id++;
+            })
+        }
+    </script>
+</body>
+
+</html>

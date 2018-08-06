@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>ಕನಸು</title>
+    <link href="../img/logo.png" rel="icon">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="Paper" content="Daily News ">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" type="text/css" href="../css/material.css">
+    <link rel="stylesheet" type="text/css" href="../css/common-style.css">
+
+    <style>
+        .demo-layout-waterfall .mdl-layout__header-row .mdl-navigation__link:last-of-type {
+            padding-right: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="demo-layout-waterfall mdl-layout mdl-js-layout mdl-layout--fixed-header">
+        <!-- Top Navigation bar -->
+        <header class="android-header mdl-layout__header mdl-layout__header--waterfall">
+            <div class="mdl-layout__header-row">
+                <span class="android-title mdl-layout-title">
+						<img class="android-logo-image" src="../img/kanasulogo.png">
+					</span>
+                <!-- Add spacer, to align navigation to the right in desktop -->
+                <div class="android-header-spacer mdl-layout-spacer"></div>
+                <div class="android-search-box mdl-textfield mdl-js-textfield mdl-textfield--expandable mdl-textfield--floating-label mdl-textfield--align-right mdl-textfield--full-width">
+                    <label class="mdl-button mdl-js-button mdl-button--icon" for="search-field">
+							<i class="material-icons">search</i>
+						</label>
+                    <div class="mdl-textfield__expandable-holder">
+                        <input class="mdl-textfield__input" type="text" id="search-field">
+                    </div>
+                </div>
+                <!-- Navigation -->
+                <div class="android-navigation-container">
+                    <nav class="android-navigation mdl-navigation">
+                        <a class="mdl-button mdl-js-button mdl-button--icon" href="../index.html">
+							<i class="material-icons">home</i>
+						</a>
+                        <a class="mdl-navigation__link mdl-typography--text-uppercase" href="about.html">ನಮ್ಮ ಬಗ್ಗೆ</a>
+                        <a class="mdl-navigation__link mdl-typography--text-uppercase mdl-js-button mdl-button " id="developers-dropdown">ವಿಭಾಗಗಳು<i class="material-icons">arrow_drop_down</i></a>
+                        <ul class="mdl-menu mdl-js-menu mdl-menu--bottom-left mdl-js-ripple-effect" for="developers-dropdown">
+                            <a class="headline_a" href="category.html"><li class="mdl-menu__item">ಭಾನುವಾರ</li></a> 
+                                  <a class="headline_a" href="category.html"><li class="mdl-menu__item">ಸೋಮವಾರ</li></a>
+                                  <a class="headline_a" href="category.html"><li class="mdl-menu__item">ಮಂಗಳವಾರ</li></a>
+                                  <a class="headline_a" href="category.html"><li class="mdl-menu__item">ಬುಧವಾರ</li></a>
+                                  <a class="headline_a" href="category.html"><li class="mdl-menu__item">ಗುರುವಾರ</li></a>
+                                  <a class="headline_a" href="category.html"><li class="mdl-menu__item">ಶುಕ್ರವಾರ</li></a>
+                                  <a class="headline_a" href="category.html"><li class="mdl-menu__item">ಶನಿವಾರ</li></a>
+                        </ul>
+                        <a class="mdl-navigation__link mdl-typography--text-uppercase" href="contact.html">ಸಂಪರ್ಕಿಸಿ</a>
+                        <a class="mdl-navigation__link mdl-typography--text-uppercase" href="../index-en.html">English</a>
+
+                    </nav>
+                </div>
+                <span class="android-mobile-title mdl-layout-title">
+						<img class="android-logo-image center" src="../img/kanasulogo.png">
+					</span>
+            </div>
+           
+        </header>
+
+        <div class="android-drawer mdl-layout__drawer">
+            <span class="mdl-layout-title"></span>
+            <nav class="mdl-navigation">
+                <a class="mdl-navigation__link mdl-typography--text-uppercase" href="../index.html">ಮುಖಪುಟ</a>
+                <a class="mdl-navigation__link mdl-typography--text-uppercase" href="about.html">ನಮ್ಮ ಬಗ್ಗೆ</a>
+                <div class="android-drawer-separator"></div>
+                <a class="mdl-navigation__link" href="category.html">ಭಾನುವಾರ</a>
+                <a class="mdl-navigation__link" href="category.html">ಸೋಮವಾರ</a>
+                <a class="mdl-navigation__link" href="category.html">ಮಂಗಳವಾರ</a>
+                <a class="mdl-navigation__link" href="category.html">ಬುಧವಾರ</a>
+                <a class="mdl-navigation__link" href="category.html">ಗುರುವಾರ</a>
+                <a class="mdl-navigation__link" href="category.html">ಶುಕ್ರವಾರ</a>
+                <a class="mdl-navigation__link" href="category.html">ಶನಿವಾರ</a>
+                <div class="android-drawer-separator"></div>
+                <a class="mdl-navigation__link mdl-typography--text-uppercase" href="contact.html">ಸಂಪರ್ಕಿಸಿ</a>
+                <div class="android-drawer-separator"></div>
+                <a class="mdl-navigation__link" href="../index-en.html">English Language</a>
+                <a class="mdl-navigation__link" href="saval.ogmatech.in">www.saval.ogmatech.in</a>
+                <a class="mdl-navigation__link" href="hracorg.ogmatech.in">www.hracorg.ogmatech.in</a>
+            </nav>
+        </div>
+        <main class="mdl-layout__content">
+
+            <!-- Main Section -->
+            <section class="mdl-grid mdl-grid--no-spacing" style="background-color: #e8f8ff">
+                <!-- Empty space div -->
+                <div class="mdl-cell mdl-cell--2-col-desktop mdl-cell--2-col-tablet mdl-cell--12-col-phone"></div>
+                <!-- Main content div -->
+                <div class="mdl-cell mdl-cell--8-col-desktop mdl-cell--8-col-tablet mdl-cell--12-col-phone">
+                    <center><img class="header-img" src="../img/kanasublue.jpg" style="width: 60%; max-height: 200px"></center>
+                    <section class="mdl-grid mdl-grid--no-spacing" style="padding-top: 8px;padding-bottom: 8px">
+                        <div class="mdl-cell mdl-cell--3-col-desktop mdl-cell--12-col-phone datelinks">
+                            <a href="https://play.google.com"><img style="object-fit: contain;width: 100%;height: 100%" src="../img/gplay.png"></a>
+                        </div>
+                        <div class="mdl-cell mdl-cell--6-col-desktop mdl-cell--12-col-phone datelinks">
+                            <center>
+                                <div class="today_date" id="todayDate"></div>
+                            </center>
+                        </div>
+                        <div class="mdl-cell mdl-cell--3-col-desktop mdl-cell--12-col-phone datelinks">
+                            <center><a href="https://facebook.com"><img src="../img/facebook.png"></a>
+                                <a href="https://twitter.com"><img src="../img/twitter.png"></a>
+                                <a href="https://instagram.com"><img src="../img/instagram.png"></a>
+                                <a href="https://youtube.com"><img src="../img/youtube.png"></a></center>
+                        </div>
+                    </section>
+                    
+                        <!-- 1st Row -->
+                        <div class="mdl-grid mdl-grid--no-spacing">
+                            <div class="content_card_1 mdl-cell mdl-cell--12-col-desktop post_card">
+                                <h3>ಸಂಪರ್ಕಿಸಿ</h3>
+                                <div class="head_divider"></div>
+                                <p class="about_text">
+                                    The Railway Ministry’s ‘advice’ to the Kerala government to ‘seek specific approval’ from the Ministry of that the project is already under implementation. —KBG, Editor-in-Chief
+                                    <br/>
+                                    <br/> Bengaluru: The Karnataka High Court has asked the State Government to produce documentary evidence to prove its contention that the government is not taking up the controversial two proposed Railway lines that passes through Kodagu.
+                                    <br/>
+                            </div>
+                        </div>
+                        <!-- End of 1st Row -->
+                        <!-- 2nd Row -->
+                        <div class="mdl-grid mdl-grid--no-spacing">
+                        <div class="content_card_6 mdl-cell mdl-cell--4-col-desktop mdl-cell--6-col-tablet mdl-cell--12-col-phone" style="padding: 20px">
+                           <div class="mdl-cell mdl-card" style="width: 100%;height: 490px;text-align: center;padding: 16px">
+                               <h5>Address</h5> 
+                               <br/>
+                               <h6>#136, 2nd Floor</h6>
+                               <h6>Opposite to BSNL Office</h6>
+                               <h6>D. Devaraj Urs Road</h6>
+                               <h6>Mysuru - 570001</h6>
+                               <br/>
+                               <div class="head_divider"></div>
+                               <br/>
+                               <h5>Phone Number</h5> 
+                               <br/>
+                               <h6>0821-4250101</h6>
+                               <h6>0821-2975100</h6>
+                               <br/>
+                               <div class="head_divider"></div>
+                               <br/>
+                               <h5>Email</h5> 
+                               <br/>
+                               <h6>savalpathrike@gmail.com</h6>
+                              
+                           </div>
+                            
+   
+                        </div>
+                        <div class="content_card_7 mdl-cell mdl-cell--8-col-desktop mdl-cell--6-col-tablet mdl-cell--12-col-phone" style="padding: 20px">
+                            <iframe allowfullscreen frameborder=0 height=500 src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15593.925163638785!2d76.5459466!3d12.2833413!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x5d8ae2dcb4032319!2sOrchids+public+School!5e0!3m2!1sen!2sin!4v1452345757576" width=100%></iframe>
+                        </div>
+                    </div>
+<!--
+                        
+                        <!-- End of 2nd Row -->
+                        <div class="head_divider"></div>
+                        <!-- 3rd Row -->
+
+                        <div class="mdl-grid mdl-grid--no-spacing">
+                            <div class="content_card_4 mdl-cell mdl-cell--12-col-desktop mdl-cell--12-col-phone" style="margin: auto; width=100%;padding-bottom: 20px">
+                                <center>
+                                    <h3>ನಿಮ್ಮ ಅಭಿಪ್ರಾಯ ತಿಳಿಸಿ</h3>
+                                </center>
+                            </div>
+                            
+                            
+                            <div class="content_card_4 mdl-cell mdl-card mdl-cell--12-col-desktop" style="margin: auto;margin-bottom: 20px">
+                                <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSe3VXIGdDo5e9-C5FNDe5D3qvzKpCB1E0qkkx8FbUgw1ehFMg/viewform?embedded=true" width="100%" height="1300" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+                            </div>
+
+
+                        </div>
+
+                    
+                        <!-- End of 3rd Row -->
+                    
+               
+                </div>
+            </section>
+            <footer class="docs-text-styling docs-footer mdl-mini-footer mdl-color--grey-900">
+                <ul>
+                    <li class="mdl-mini-footer--social-btn">
+                        <a href="https://facebook.com" class="social-btn social-btn__facebook" role="button" title="Facebook"></a>
+                    </li>
+                    <li class="mdl-mini-footer--social-btn">
+                        <a href="https://instagram.com" class="social-btn social-btn__instagram" role="button" title="Instagram"></a>
+                    </li>
+                    <li class="mdl-mini-footer--social-btn">
+                        <a href="https://twitter.com" class="social-btn social-btn__twitter" role="button" title="Twitter"></a>
+                    </li>
+                    <li class="mdl-mini-footer--social-btn">
+                        <a href="https://youtube.com" class="social-btn social-btn__youtube" role="button" title="Youtube"></a>
+                    </li>
+                </ul>
+                <ul class="docs-link-list">
+                    <li>All rights reserved : 2018 SavalNews</li>
+                </ul>
+            </footer>
+        </main>
+    </div>
+    <script type="text/javascript" src="../js/material.js"></script>
+    <script type="text/javascript" src="../js/jquery.js"></script>
+    <script type="text/javascript" src="../js/common.js"></script>
+</body>
+
+</html>
